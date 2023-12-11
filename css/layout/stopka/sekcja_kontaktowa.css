@@ -5,10 +5,13 @@
   padding: 34px 0;
 }
 #stopka-kontener{
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  gap: 160px;
+  gap: 100px;
   padding-top: 14px;
+  max-width: 1200px;
+  width: calc(100vw - 64px);
 }
 #stopka-kategorie{
   display: flex;

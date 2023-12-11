@@ -1,14 +1,20 @@
 :root {
-    --background-light: #fffbf2;
-    --background-dark: #212121;
+    /* Main colors */
+    --black: #000000;
+    --white: #ffffff;
+    --light-background: #fffbf2;
+    --primary: #b28b68;
+    --red: #ff0000;
 
-    --background-black: #000;
+    /* KOLORY TEKSTU NA CIEMNYM TLE */
+    --header-on-dark: #fff; 
+    --text-on-dark: #b2b2b2;
+    --sub-text-on-dark: #7f7f7f;
+    --separator-on-dark: #191919
 
-    --color-o-nas-dziedzictwo: #b28b68;
-    --color-o-nas-doswiadczenie: #b89949;
-    --color-o-nas-warsztat: #966b2b;
-
-    --color-repertuar-baszta: #e1bfa0;
-    --color-repertuar-azja: #f22426;
-    --color-repertuar-krakow: #b28b68;
+    /* KOLORY TEKSTU NA JASNYM TLE */
+    --header-on-light: #000;
+    --text-on-light: #4D4C49;
+    --sub-text-on-light: #B2B0A9;
+    --separator-on-light: #EBE7DF;
 }

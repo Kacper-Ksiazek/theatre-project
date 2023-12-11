@@ -8,8 +8,8 @@
 .kontener{
   display: flex;
   max-width: 1200px;
-  margin: 0 18vw;
-  column-gap: 80px;
+  margin: 0 auto;
+  column-gap: 40px;
 }
 .kontener h1, .kontener h3, .kontener p{
   text-align: center;
@@ -24,10 +24,11 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+.kontener p{
+  opacity: 0.6;
+}
 .kreska{
-  height: 144px;
+  height: 150px;
   width: 2px;
-  background-color: var(--white);
-  opacity: 0.8;
-  display: block;
+  background-color: rgb(47, 46, 46);
 }

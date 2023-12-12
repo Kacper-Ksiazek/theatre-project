@@ -30,7 +30,7 @@
   display: flex;
   gap: 8px;
 }
-#teatr1, #teatr2{
+#zdjecie-teatr1, #zdjecie-teatr2{
   width: 50%;
   border-radius: 8px;
 }
@@ -53,18 +53,18 @@
   font-size: 20px;
   text-align: center;
 }
-.godziny{
+.godziny-otwarcia{
   font-weight: bold;
   padding-left: 8px;
 }
 #otworz-mape{
-  font-weight: bold;
   font-size: 16px;
   height: 50px;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 40px;
   transition: opacity 0.2s;
+  width: 500px;
 }
 #otworz-mape:hover{
   opacity: 0.74;

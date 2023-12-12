@@ -14,7 +14,7 @@ const RECENZJE = [
         grafika: "pw.png",
     },
     {
-        uczelnia: "Katolicy Uniwersytet Lubelski",
+        uczelnia: "Katolicki Uniwersytet Lubelski",
         ocena: 5,
         uzasadnienie: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in venenatis felis. Mauris quis eleifend dui. Etiam",
         data: "Luty 2020",
@@ -46,7 +46,7 @@ const RECENZJE = [
 // Aktualny skrypt, który jest wykonywany po załadowaniu strony
 
 // Pobieramy element, w którym będą wyświetlane recenzje
-const reviews_wrapper = document.getElementById("recenzje");
+const reviews_wrapper = document.getElementById("recenzje-kontent");
 
 if (!reviews_wrapper) throw new Error('Nie znaleziono elementu o id "recenzje"! Jest to wymagane do prawidlowego wyswietlania recenzji.');
 
@@ -59,7 +59,7 @@ for (const { data, grafika, ocena, uczelnia, uzasadnienie } of RECENZJE) {
     // Tworzymy element z grafiką uczelni
     const img = document.createElement("img");
     img.src = `/images/strona_glowna/recenzje/${grafika}`;
-    img.height = 100;
+    img.height = 144;
 
     // Tworzymy element z nazwą uczelni
     const university_name = document.createElement("h3");

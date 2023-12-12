@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/layout/index.css" />
         <link rel="stylesheet" href="css/strona_glowna/przerywnik_z_liczbami.css" />
         <link rel="stylesheet" href="css/strona_glowna/przerywnik_lokalizacja.css">
+        <link rel="stylesheet" href="css/strona_glowna/recenzje.css">
         <!--  -->
         <!-- Font awesome icons -->
         <!--  -->
@@ -28,19 +29,19 @@
         <main>
             <!-- Przerywnik pokazujący teatr w liczbach  -->
             <section id="przerywnik">
-                <div class="kontener">
+                <div id="przerywnik-kontener">
                     <div>
                         <h1>536 lat</h1>
                         <h3>funkcjonowania</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <span class="kreska"></span>
+                    <span class="przerywnik-linia"></span>
                     <div>
                         <h1>132 mln</h1>
                         <h3>sprzedanych biletów</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <span class="kreska"></span>
+                    <span class="przerywnik-linia"></span>
                     <div>
                         <h1>13 000 +</h1>
                         <h3>unikalnych spektakli</h3>
@@ -60,15 +61,14 @@
     <p>Odwiedź nas przy malowniczej alei Adama Mickiewicza i zanurz się w wyjątkowej atmosferze sztuki i kultury!</p>
     <span id="linia-lokalizacja"></span>
     <h4>Godziny otwarcia</h4>
-    <p>poniedziałek - piątek: <span class="godziny">16:00 - 24:00</span></p>
-    <p>sobota - niedziela: <span class="godziny">10:30 - 24.00</span></p>
-    <button id="otworz-mape">OTWÓRZ MAPĘ ></button>
+    <p>poniedziałek - piątek: <span class="godziny-otwarcia">16:00 - 24:00</span></p>
+    <p>sobota - niedziela: <span class="godziny-otwarcia">10:30 - 24.00</span></p>
   </div>
   <div id="lokalizacja-zdjecia">
     <img id="mapa" src="images/strona_glowna/lokalizacja/mapa.jpg" alt="lokalizacja teatru na mapie Krakowa">
     <div id="zdjecia_z_zewnatrz">
-    <img id="teatr1" src="images/strona_glowna/lokalizacja/zdjecie1.jpg" alt="1. zdjęcie teatru z zewnątrz">
-    <img id="teatr2" src="images/strona_glowna/lokalizacja/zdjecie2.jpg" alt="2. zdjęcie teatru z zewnątrz">
+    <img id="zdjecie-teatr1" src="images/strona_glowna/lokalizacja/zdjecie1.jpg" alt="1. zdjęcie teatru z zewnątrz">
+    <img id="zdjecie-teatr2" src="images/strona_glowna/lokalizacja/zdjecie2.jpg" alt="2. zdjęcie teatru z zewnątrz">
   </div>
   </div>
 </div>
@@ -83,7 +83,7 @@
           <div id="social-media">
             <h1>Ethereal</h1>
             <h3>Kraków</h3>
-            <span id="horizontal-line"></span>
+            <span id="stopka-pozioma-linia"></span>
             <div class="ikonki">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -100,7 +100,7 @@
               <a href="#">Umiejętności</a>
             </div>
             </div>
-            <span class="linia"></span>
+            <span class="stopka-linia"></span>
             <div>
               <h3>Program</h3>
               <div class="stopka-podkategorie">
@@ -109,7 +109,7 @@
               <a href="#">Nadchodzące wydarzenia</a>
             </div>
             </div>
-            <span class="linia"></span>
+            <span class="stopka-linia"></span>
             <div>
               <h3>Współprace</h3>
               <div class="stopka-podkategorie">
@@ -118,7 +118,7 @@
               <a href="#">Kontakt indywidualny</a>
             </div>
             </div>
-            <span class="linia"></span>
+            <span class="stopka-linia"></span>
             <div>
               <h3>Dokumenty</h3>
               <div class="stopka-podkategorie">
@@ -137,16 +137,30 @@
           <section id="autorzy">
             <div id="nazwiska">
               <h2>Weronika Sławacka 415860</h2>
-              <span id="kreseczka"></span>
+              <span id="nazwiska-linia"></span>
               <h2>Kacper Książek 417564</h2>
             </div>
-            <p id="techniki">Techniki Internetowe 2023/2024 IiAD grupa 5.</p>
+            <p id="podpis">Techniki Internetowe 2023/2024 IiAD grupa 5.</p>
           </section>
+
+  <section id="recenzje">
+    <div id="recenzje-kontener">
+    <div id="recenzje-tytul">
+
+    </div>
+    <p id="recenzje-opis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis suscipit numquam, beatae quos doloribus nisi in sed porro, ipsam ad et ratione neque eveniet assumenda facere quo iure accusamus veritatis.</p>
+    <div id="recenzje-kontent">
+
+    </div>
+    <button id="zobacz-wszystkie">ZOBACZ WSZYSTKIE ></button>
+    </div>
+  </section>
           
 
 <!-- KOLEJNY RANDOM -->
 <div id="RANDOM">  </div>
 
       </main>
+      <script src="javascript/strona_glowna/skrypt_wypisujacy_recenzje.js"></script>
     </body>
 </html>

@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
 }
-.linia{
+.stopka-linia{
   height: 130px;
   background-color: rgb(47, 46, 46);
   width: 2px;
@@ -68,7 +68,7 @@
   font-weight: normal;
   opacity: 0.6;
 }
-#horizontal-line{
+#stopka-pozioma-linia{
   width: 120px;
   height: 2px;
   background-color: rgb(47, 46, 46);
@@ -93,12 +93,13 @@
   gap: 30px;
   font-size: 14px;
 }
-#kreseczka{
+#nazwiska-linia{
   height: 30px;
-  width: 2px;
-  background-color: var(--black);
+  width: 1px;
+  background-color: rgb(47, 46, 46);
+  opacity: 0.4;
 }
-#techniki{
+#podpis{
   text-align: center;
   padding-top: 10px;
   opacity: 0.5;

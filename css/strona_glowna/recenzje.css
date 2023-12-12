@@ -1,0 +1,67 @@
+#recenzje-kontener{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+#zobacz-wszystkie{
+  font-size: 16px;
+  height: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  background-color: var(--black);
+  color: var(--white);
+  width: 500px;
+  align-self: center;
+}
+#zobacz-wszystkie:hover{
+  opacity: 0.74;
+}
+#recenzje-kontent{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  justify-content: space-between;
+  gap: 30px;
+}
+#recenzje-opis{
+  color: var(--text-on-light);
+}
+#recenzje-kontent div{
+  width: 30%;
+  text-align: center
+}
+.data{
+  color: var(--sub-text-on-light);
+  font-size: 14px;
+  margin-top: 10px;
+}
+.ocena{
+  display: flex;
+  width: 100%;
+  margin: 16px auto;
+  justify-content: center;
+}
+.ocena i{
+  font-size: 32px;
+}
+#recenzje-kontent h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  
+}
+.opis{
+  color: var(--text-on-light);
+}
+#recenzje-kontent h3::after{
+  content: "";
+  background-color: var(--separator-on-light);
+  width: 160px;
+  height: 2px;
+  position: absolute;
+  top: 30px;
+  left: 98px;
+}

@@ -1,0 +1,71 @@
+#lokalizacja{
+  display: flex;
+  width: 100vw;
+  background-color: var(--black);
+  color: var(--white);
+}
+#lokalizacja-kontener{
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  padding: 40px 100px 40px 100px;
+}
+#linia-lokalizacja{
+  align-self: center;
+  display: block;
+  background-color: rgb(47, 46, 46);
+  width: 240px;
+  height: 2px;
+  margin: 10px 0;
+}
+#lokalizacja-zdjecia{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 8px;
+}
+#zdjecia_z_zewnatrz{
+  display: flex;
+  gap: 8px;
+}
+#teatr1, #teatr2{
+  width: 50%;
+  border-radius: 8px;
+}
+#lokalizacja-opis{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+#lokalizacja-opis h1{
+  font-size: 48px;
+  text-align: center;
+}
+#lokalizacja-opis p{
+  font-size: 18px;
+  opacity: 0.6;
+  text-align: center;
+}
+#lokalizacja-opis h4{
+  font-size: 20px;
+  text-align: center;
+}
+.godziny{
+  font-weight: bold;
+  padding-left: 8px;
+}
+#otworz-mape{
+  font-weight: bold;
+  font-size: 16px;
+  height: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: opacity 0.2s;
+}
+#otworz-mape:hover{
+  opacity: 0.74;
+}

@@ -88,7 +88,7 @@ for (const { data, grafika, ocena, uczelnia, uzasadnienie } of RECENZJE) {
     }
 
     // Dodanie elementów do wrappera
-    [img, university_name, description, date, rating].forEach((element) => review_wrapper.appendChild(element));
+    [img, rating, university_name, description, date].forEach((element) => review_wrapper.appendChild(element));
 
     // Dodanie recenzji do strony
     reviews_wrapper.appendChild(review_wrapper);

@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="css/strona_glowna/przerywnik_z_liczbami.css" />
         <link rel="stylesheet" href="css/strona_glowna/przerywnik_lokalizacja.css">
         <link rel="stylesheet" href="css/strona_glowna/recenzje.css">
+        <link rel="stylesheet" href="css/strona_glowna/newsletter.css">
         <!--  -->
         <!-- Font awesome icons -->
         <!--  -->
@@ -59,16 +60,16 @@
   <div id="lokalizacja-opis">
     <h1>al. Adama Mickiewicza 30, 30-059 Kraków</h1>
     <p>Odwiedź nas przy malowniczej alei Adama Mickiewicza i zanurz się w wyjątkowej atmosferze sztuki i kultury!</p>
-    <span id="linia-lokalizacja"></span>
+    <span id="lokalizacja-linia"></span>
     <h4>Godziny otwarcia</h4>
-    <p>poniedziałek - piątek: <span class="godziny-otwarcia">16:00 - 24:00</span></p>
-    <p>sobota - niedziela: <span class="godziny-otwarcia">10:30 - 24.00</span></p>
+    <p>poniedziałek - piątek: <span class="lokalizacja-godziny-otwarcia">16:00 - 24:00</span></p>
+    <p>sobota - niedziela: <span class="lokalizacja-godziny-otwarcia">10:30 - 24.00</span></p>
   </div>
   <div id="lokalizacja-zdjecia">
-    <img id="mapa" src="images/strona_glowna/lokalizacja/mapa.jpg" alt="lokalizacja teatru na mapie Krakowa">
-    <div id="zdjecia_z_zewnatrz">
-    <img id="zdjecie-teatr1" src="images/strona_glowna/lokalizacja/zdjecie1.jpg" alt="1. zdjęcie teatru z zewnątrz">
-    <img id="zdjecie-teatr2" src="images/strona_glowna/lokalizacja/zdjecie2.jpg" alt="2. zdjęcie teatru z zewnątrz">
+    <img id="lokalizacja-mapa" src="images/strona_glowna/lokalizacja/mapa.jpg" alt="lokalizacja teatru na mapie Krakowa">
+    <div id="lokalizacja-zdjecia-z-zewnatrz">
+    <img id="lokalizacja-zdjecie1" src="images/strona_glowna/lokalizacja/zdjecie1.jpg" alt="1. zdjęcie teatru z zewnątrz">
+    <img id="lokalizacja-zdjecie2" src="images/strona_glowna/lokalizacja/zdjecie2.jpg" alt="2. zdjęcie teatru z zewnątrz">
   </div>
   </div>
 </div>
@@ -80,7 +81,7 @@
 <!-- stopka kontakty -->
         <section id="stopka-kontakty">
           <div id="stopka-kontener">
-          <div id="social-media">
+          <div id="stopka-social-media">
             <h1>Ethereal</h1>
             <h3>Kraków</h3>
             <span id="stopka-pozioma-linia"></span>
@@ -129,18 +130,18 @@
             </div>
           </div>
           <div>
-            <img id="logo-stopka" src="images/layout/stopka_logo_agh.jpg" alt="logo AGH">
+            <img id="stopka-logo" src="images/layout/stopka_logo_agh.jpg" alt="logo AGH">
           </div>
         </div>
-        <p id="copyright">&copy; Etheral 2024 all rights reserved</p>
+        <p id="stopka-copyright">&copy; Etheral 2024 all rights reserved</p>
         </section>
           <section id="autorzy">
-            <div id="nazwiska">
+            <div id="autorzy-nazwiska">
               <h2>Weronika Sławacka 415860</h2>
-              <span id="nazwiska-linia"></span>
+              <span id="autorzy-linia"></span>
               <h2>Kacper Książek 417564</h2>
             </div>
-            <p id="podpis">Techniki Internetowe 2023/2024 IiAD grupa 5.</p>
+            <p id="autorzy-podpis">Techniki Internetowe 2023/2024 IiAD grupa 5.</p>
           </section>
 
 <!-- RANDOM DIV -->
@@ -154,13 +155,32 @@
     <p id="recenzje-opis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis suscipit numquam, beatae quos doloribus nisi in sed porro, ipsam ad et ratione neque eveniet assumenda facere quo iure accusamus veritatis.</p>
     <div id="recenzje-kontent">
     </div>
-    <button id="zobacz-wszystkie">ZOBACZ WSZYSTKIE ></button>
+    <button id="recenzje-zobacz-wszystkie">ZOBACZ WSZYSTKIE ></button>
     </div>
   </section>
           
 
 <!-- KOLEJNY RANDOM -->
-<div class="RANDOM">  </div>
+<div class="RANDOM"></div>
+<div class="RANDOMOWY"></div>
+
+<section id="newsletter">
+<div id="newsletter-kontener">
+<h1 id="newsletter-naglowek-badz-na-biezaco">Bądź z nami na bieżąco!</h1>
+<p id="newsletter-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fugit assumenda odio ex tenetur vero nemo eos quod accusantium rerum ab quo non, velit aperiam quasi fuga repellendus? Eveniet, quisquam.</p>
+<h3 id="newsletter-naglowek-zapisz">Zapisz się do naszego newslettera!</h3>
+<form action="">
+  <input id="newsletter-input-email" type="email" placeholder="Adres e-mail">
+  <div id="newsletter-klauzula-kontener">
+  <label id="newsletter-label-RODO" for="newsletter-input-RODO">Zapoznałem/am się z <span id="newsletter-klauzula-RODO">klauzulą informacyjną RODO</span>
+    <input id="newsletter-input-RODO" type="checkbox"></label>
+  <span id="newsletter-custom-input"></span>
+</div>
+</form>
+<button id="newsletter-dolacz">DOŁĄCZ</button>
+</div>
+</section>
+
 
       </main>
       <script src="javascript/strona_glowna/skrypt_wypisujacy_recenzje.js"></script>

@@ -12,7 +12,7 @@
   gap: 120px;
   padding: 40px 100px 40px 100px;
 }
-#linia-lokalizacja{
+#lokalizacja-linia{
   align-self: center;
   display: block;
   background-color: rgb(47, 46, 46);
@@ -26,11 +26,11 @@
   width: 50%;
   gap: 8px;
 }
-#zdjecia_z_zewnatrz{
+#lokalizacja-zdjecia-z-zewnatrz{
   display: flex;
   gap: 8px;
 }
-#zdjecie-teatr1, #zdjecie-teatr2{
+#lokalizacja-zdjecie1, #lokalizacja-zdjecie2{
   width: 50%;
   border-radius: 8px;
 }
@@ -53,7 +53,7 @@
   font-size: 20px;
   text-align: center;
 }
-.godziny-otwarcia{
+.lokalizacja-godziny-otwarcia{
   font-weight: bold;
   padding-left: 8px;
 }

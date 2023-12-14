@@ -53,18 +53,18 @@
 .ikonki i:hover{
   opacity: 0.9;
 }
-#social-media{
+#stopka-social-media{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#social-media h1{
+#stopka-social-media h1{
   font-size: 40px;
 }
-#social-media h1, #social-media h3{
+#stopka-social-media h1, #stopka-social-media h3{
   text-align: center;
 }
-#social-media h3{
+#stopka-social-media h3{
   font-weight: normal;
   opacity: 0.6;
 }
@@ -74,10 +74,10 @@
   background-color: rgb(47, 46, 46);
   margin: 10px 0;
 }
-#logo-stopka{
+#stopka-logo{
   height: 140px;
 }
-#copyright{
+#stopka-copyright{
   text-align: center;
   color: rgb(99, 97, 97);
   padding-top: 18px;
@@ -87,19 +87,19 @@
   background-color: var(--white);
   padding: 16px 0;
 }
-#nazwiska{
+#autorzy-nazwiska{
   display: flex;
   justify-content: center;
   gap: 30px;
   font-size: 14px;
 }
-#nazwiska-linia{
+#autorzy-linia{
   height: 30px;
   width: 1px;
   background-color: rgb(47, 46, 46);
   opacity: 0.4;
 }
-#podpis{
+#autorzy-podpis{
   text-align: center;
   padding-top: 10px;
   opacity: 0.5;

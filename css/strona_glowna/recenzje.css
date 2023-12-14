@@ -1,3 +1,6 @@
+#recenzje{
+  width: 100vw;
+}
 #recenzje-kontener{
   max-width: 1200px;
   margin: 0 auto;
@@ -5,7 +8,7 @@
   flex-direction: column;
   padding: 50px 0;
 }
-#zobacz-wszystkie{
+#recenzje-zobacz-wszystkie{
   font-size: 16px;
   height: 50px;
   border-radius: 6px;
@@ -17,7 +20,7 @@
   align-self: center;
   margin-top: 10px;
 }
-#zobacz-wszystkie:hover{
+#recenzje-zobacz-wszystkie:hover{
   opacity: 0.74;
 }
 #recenzje-kontent{

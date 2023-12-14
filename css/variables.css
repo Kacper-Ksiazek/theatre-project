@@ -16,5 +16,5 @@
     --header-on-light: #000;
     --text-on-light: #4D4C49;
     --sub-text-on-light: #B2B0A9;
-    --separator-on-light: #EBE7DF;
+    --separator-on-light: rgba(206, 199, 199, 0.6);
 }

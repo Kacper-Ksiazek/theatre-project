@@ -11,6 +11,11 @@
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  font-size: 18px;
+ }
+
+ button, input, input::placeholder, textarea, textarea::placeholder{
+  font-family: 'Lato', sans-serif !important;
  }
 
  .naglowek{
@@ -22,6 +27,9 @@
   left: 60px;
   top: -40px;
  }
+ .naglowek-odbicie{
+  left: 500px;
+  }
  .naglowek-linia{
   height: 6px;
   width: 100%;

@@ -5,6 +5,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 .o-nas-przycisk{
   padding: 12px 28px;
@@ -51,15 +54,16 @@
   
 }
 .o-nas-zdjecie{
-  
   border-radius: 10px;
-  width: 380px;
+  width: 360px;
+  height: 480px;
 }
 .o-nas-kontent{
   display: flex;
-  gap: 100px;
+  gap: 120px;
   align-items: center;
 }
 .o-nas-naglowek{
   padding-top: 40px;
+  margin-bottom: -50px;
 }

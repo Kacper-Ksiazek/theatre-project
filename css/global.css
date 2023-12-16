@@ -11,4 +11,30 @@
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  font-size: 18px;
+ }
+
+ button, input, input::placeholder, textarea, textarea::placeholder{
+  font-family: 'Lato', sans-serif !important;
+ }
+
+ .naglowek{
+  font-size: 70px;
+  background-color: var(--white);
+  position: absolute;
+  color: var(--separator-on-light);
+  padding: 0 20px;
+  left: 60px;
+  top: -40px;
+ }
+ .naglowek-odbicie{
+  left: 500px;
+  }
+ .naglowek-linia{
+  height: 6px;
+  width: 100%;
+  background-color: var(--separator-on-light);
+  display: block;
+  position: relative;
+  margin: 60px 0 100px 0;
  }

@@ -10,11 +10,11 @@
     --header-on-dark: #fff; 
     --text-on-dark: #b2b2b2;
     --sub-text-on-dark: #7f7f7f;
-    --separator-on-dark: #191919
+    --separator-on-dark: #191919;
 
     /* KOLORY TEKSTU NA JASNYM TLE */
     --header-on-light: #000;
     --text-on-light: #4D4C49;
     --sub-text-on-light: #B2B0A9;
-    --separator-on-light: #EBE7DF;
+    --separator-on-light: rgba(206, 199, 199, 0.6);
 }

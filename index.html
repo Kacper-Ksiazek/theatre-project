@@ -17,7 +17,7 @@
         <!-- Potrzebne na te strone arkusze stylow -->
         <!--  -->
         <link rel="stylesheet" href="css/layout/index.css" />
-        <link rel="stylesheet" href="css/strona_glowna/przerywnik_z_liczbami.css" />
+        <link rel="stylesheet" href="css/strona_glowna/index.css">
         <!--  -->
         <!-- Font awesome icons -->
         <!--  -->
@@ -25,39 +25,81 @@
     </head>
     <body>
         <main>
+        <header>
+          <div id="header-kontener">
+          <div id="header-logo"><h1>Ethereal</h1></div>
+          <nav id="header-navbar">
+
+          </nav>
+        </div>
+        </header>
+        <section id="landing-page">
+          <div id="landing-page-kontener">
+          <h1 id="landing-page-naglowek">NOWA DEFINICJA SZTUKI</h1>
+          <p id="landing-page-opis">W Teatrze Ethereal nie tylko przekraczamy granice klasycznej sztuki, ale także kreujemy nową definicję tego, co teatralne. Nasze sceny pulsują życiem, a każdy spektakl to unikalna opowieść, która kształtuje wspólną przestrzeń sztuki. Dołącz do naszej teatralnej rewolucji, gdzie tradycja spotyka się z innowacją, a emocje stają się nieograniczoną formą wyrazu. Ethereal - tam, gdzie sztuka ożywa w nowy, niezwykły sposób.</p>
+          <img id="landing-page-zdjecie" src="images/strona_glowna/background-photo.png" alt="zdjęcie przedstawiające teatr Ethereal z zewnątrz">
+        </div>
+        </section>
+
+        <div class="RANDOMOWY"></div>
+
             <!-- Przerywnik pokazujący teatr w liczbach  -->
             <section id="przerywnik">
-                <div class="kontener">
+                <div id="przerywnik-kontener">
                     <div>
                         <h1>536 lat</h1>
                         <h3>funkcjonowania</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Przez 536 lat Teatr Ethereal zachowuje tradycję teatralną i niepowtarzalny charakter, który wdziera się w serca pokoleń.</p>
                     </div>
-                    <span class="kreska"></span>
+                    <span class="przerywnik-linia"></span>
                     <div>
                         <h1>132 mln</h1>
                         <h3>sprzedanych biletów</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>To nie tylko liczba. To wynik pasji i zaangażowania naszej widowni, która wspólnie z nami podróżuje przez fascynujący świat sztuki.</p>
                     </div>
-                    <span class="kreska"></span>
+                    <span class="przerywnik-linia"></span>
                     <div>
                         <h1>13 000 +</h1>
                         <h3>unikalnych spektakli</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ponad 13000 unikalnych spektakli odsłoniło przed widzem niekończący się świat narracji, interpretacji, artystycznych eksperymentów. </p>
                     </div>
                 </div>
             </section>
 
+ <!-- RANDOMOWY DIV DO USUNIECIA -->
+ <div class="RANDOMOWY"></div>
+
+<!-- przerywnik lokalizacja -->
+<section id="lokalizacja">
+  <div id="lokalizacja-kontener">
+  <div id="lokalizacja-opis">
+    <h1>al. Adama Mickiewicza 30, 30-059 Kraków</h1>
+    <p>Odwiedź nas przy malowniczej alei Adama Mickiewicza i zanurz się w wyjątkowej atmosferze sztuki i kultury!</p>
+    <span id="lokalizacja-linia"></span>
+    <h4>Godziny otwarcia</h4>
+    <p>poniedziałek - piątek: <span class="lokalizacja-godziny-otwarcia">16:00 - 24:00</span></p>
+    <p>sobota - niedziela: <span class="lokalizacja-godziny-otwarcia">10:30 - 24.00</span></p>
+  </div>
+  <div id="lokalizacja-zdjecia">
+    <img id="lokalizacja-mapa" src="images/strona_glowna/lokalizacja/mapa.jpg" alt="lokalizacja teatru na mapie Krakowa">
+    <div id="lokalizacja-zdjecia-z-zewnatrz">
+    <img id="lokalizacja-zdjecie1" src="images/strona_glowna/lokalizacja/zdjecie1.jpg" alt="1. zdjęcie teatru z zewnątrz">
+    <img id="lokalizacja-zdjecie2" src="images/strona_glowna/lokalizacja/zdjecie2.jpg" alt="2. zdjęcie teatru z zewnątrz">
+  </div>
+  </div>
+</div>
+</section>
+
 <!-- RANDOMOWY DIV DO USUNIECIA -->
-            <div id="RANDOMOWY"></div>
+            <div class="RANDOMOWY"></div>
 
 <!-- stopka kontakty -->
         <section id="stopka-kontakty">
           <div id="stopka-kontener">
-          <div id="social-media">
+          <div id="stopka-social-media">
             <h1>Ethereal</h1>
             <h3>Kraków</h3>
-            <span id="horizontal-line"></span>
+            <span id="stopka-pozioma-linia"></span>
             <div class="ikonki">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -74,7 +116,7 @@
               <a href="#">Umiejętności</a>
             </div>
             </div>
-            <span class="linia"></span>
+            <span class="stopka-linia"></span>
             <div>
               <h3>Program</h3>
               <div class="stopka-podkategorie">
@@ -83,7 +125,7 @@
               <a href="#">Nadchodzące wydarzenia</a>
             </div>
             </div>
-            <span class="linia"></span>
+            <span class="stopka-linia"></span>
             <div>
               <h3>Współprace</h3>
               <div class="stopka-podkategorie">
@@ -92,7 +134,7 @@
               <a href="#">Kontakt indywidualny</a>
             </div>
             </div>
-            <span class="linia"></span>
+            <span class="stopka-linia"></span>
             <div>
               <h3>Dokumenty</h3>
               <div class="stopka-podkategorie">
@@ -103,24 +145,185 @@
             </div>
           </div>
           <div>
-            <img id="logo-stopka" src="images/layout/stopka_logo_agh.jpg" alt="logo AGH">
+            <img id="stopka-logo" src="images/layout/stopka_logo_agh.jpg" alt="logo AGH">
           </div>
         </div>
-        <p id="copyright">&copy; Etheral 2024 all rights reserved</p>
+        <p id="stopka-copyright">&copy; Etheral 2024 all rights reserved</p>
         </section>
           <section id="autorzy">
-            <div id="nazwiska">
+            <div id="autorzy-nazwiska">
               <h2>Weronika Sławacka 415860</h2>
-              <span id="kreseczka"></span>
+              <span id="autorzy-linia"></span>
               <h2>Kacper Książek 417564</h2>
             </div>
-            <p id="techniki">Techniki Internetowe 2023/2024 IiAD grupa 5.</p>
+            <p id="autorzy-podpis">Techniki Internetowe 2023/2024 IiAD grupa 5.</p>
           </section>
+
+<!-- RANDOM DIV -->
+<div class="RANDOM"></div>
+
+  <section id="recenzje">
+    <div id="recenzje-kontener">
+    <div id="recenzje-tytul">
+      <span class="naglowek-linia"><h1 class="naglowek">RECENZJE</h1></span>
+    </div>
+    <p id="recenzje-opis">Teatr Ethereal to nie tylko miejsce sztuki, ale także przestrzeń, gdzie Twój głos ma znaczenie. Dlatego z ogromną radością prezentujemy dział "Recenzje", gdzie to właśnie Ty, nasz szanowny widz, możesz podzielić się swoimi myślami, emocjami i refleksjami na temat naszych spektakli.</p>
+    <div id="recenzje-kontent">
+    </div>
+    <button class="zobacz-wszystkie">ZOBACZ WSZYSTKIE ></button>
+    </div>
+  </section>
           
 
 <!-- KOLEJNY RANDOM -->
-<div id="RANDOM">  </div>
+<div class="RANDOM"></div>
+<div class="RANDOMOWY"></div>
+
+<section id="newsletter">
+<div id="newsletter-kontener">
+<h1 id="newsletter-naglowek-badz-na-biezaco">Bądź z nami na bieżąco!</h1>
+<p id="newsletter-opis">Ciesz się pierwszeństwem informacji o najnowszych spektaklach, ekskluzywnych wydarzeniach i kuluarowych zapowiedziach, stając się częścią naszej teatralnej społeczności. W teatrze Ethereal tworzymy magiczne chwile, a Ty możesz być jednym z pierwszych, którzy je odkryją!</p>
+<h3 id="newsletter-naglowek-zapisz">Zapisz się do naszego newslettera!</h3>
+<form action="">
+  <input id="newsletter-input-email" type="email" placeholder="Podaj swój adres e-mail">
+  <div id="newsletter-klauzula-kontener">
+  <label id="newsletter-label-RODO" for="newsletter-input-RODO">Zapoznałem/am się z <span id="newsletter-klauzula-RODO">klauzulą informacyjną RODO</span>
+    <input id="newsletter-input-RODO" type="checkbox"></label>
+  <span id="newsletter-custom-input"></span>
+</div>
+</form>
+<button id="newsletter-dolacz">DOŁĄCZ</button>
+</div>
+</section>
+
+<section id="o-nas">
+<div id="o-nas-kontener">
+<div class="o-nas-naglowek">
+  <span class="naglowek-linia"><h1 class="naglowek">DZIEDZICTWO</h1></span>
+</div>
+<div class="o-nas-kontent" id="o-nas-dziedzictwo">
+<div class="o-nas-zdjecie-sekcja">
+  <img class="o-nas-zdjecie" src="images/strona_glowna/o_nas/dziecictwo.jpg" alt="zdjęcie wewnątrz teatru">
+</div>
+<div class="o-nas-opis">
+  <h3 class="o-nas-opis-pierwszy-naglowek">HISTORIA</h3>
+  <h1 class="o-nas-opis-drugi-naglowek">Początki naszego działania sięgają XVI wieku</h1>
+  <div class="o-nas-tagi">
+    <h4 class="o-nas-tag">Założyciele</h4>
+    <h4 class="o-nas-tag">Zabór pruski</h4>
+    <h4 class="o-nas-tag">II Wojna Światowa</h4>
+  </div>
+  <p class="o-nas-opis-sekcji">Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda quia eius aut doloribus sunt sequi labore, magnam nostrum saepe laborum minus nihil dolores nam dolorum autem error et veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi quae cum! Illo excepturi a similique fugiat, dolores unde cum molestiae soluta voluptates velit optio suscipit dolore provident! Fugit, accusamus!</p>
+  <button class="o-nas-przycisk">Dowiedz się więcej ></button>
+</div>
+</div>
+<div class="o-nas-naglowek">
+  <span class="naglowek-linia"><h1 class="naglowek-odbicie naglowek" >DOŚWIADCZENIE</h1></span>
+</div>
+<div class="o-nas-kontent" id="o-nas-doswiadczenie">
+<div class="o-nas-opis">
+  <h3 class="o-nas-opis-pierwszy-naglowek">OSIĄGNIĘCIA</h3>
+  <h1 class="o-nas-opis-drugi-naglowek">Królowie, Politycy, Nobliści</h1>
+  <div class="o-nas-tagi">
+    <h4 class="o-nas-tag">Założyciele</h4>
+    <h4 class="o-nas-tag">Zabór pruski</h4>
+    <h4 class="o-nas-tag">II Wojna Światowa</h4>
+  </div>
+  <p class="o-nas-opis-sekcji">Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda quia eius aut doloribus sunt sequi labore, magnam nostrum saepe laborum minus nihil dolores nam dolorum autem error et veniam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, ipsam cupiditate. Est corporis voluptatibus illo temporibus modi autem distinctio blanditiis ipsum, ratione quo quos sapiente, architecto suscipit voluptatum aspernatur dolores!</p>
+  <button class="o-nas-przycisk">Dowiedz się więcej ></button>
+</div>
+<div class="o-nas-zdjecie-sekcja">
+  <img class="o-nas-zdjecie" src="images/strona_glowna/o_nas/doswiadczenie.jpg" alt="portret króla">
+</div>
+</div>
+
+<div class="o-nas-naglowek">
+  <span class="naglowek-linia"><h1 class="naglowek">UMIEJĘTNOŚCI</h1></span>
+</div>
+<div class="o-nas-kontent" id="o-nas-umiejetnosci">
+<div class="o-nas-zdjecie-sekcja">
+  <img class="o-nas-zdjecie" src="images/strona_glowna/o_nas/umiejetnosci.jpg" alt="zdjęcie wnętrza teatru">
+</div>
+<div class="o-nas-opis">
+  <h3 class="o-nas-opis-pierwszy-naglowek">WARSZTAT</h3>
+  <h1 class="o-nas-opis-drugi-naglowek">Mistrzostwo przekazywane od pokoleń</h1>
+  <div class="o-nas-tagi">
+    <h4 class="o-nas-tag">Założyciele</h4>
+    <h4 class="o-nas-tag">Zabór pruski</h4>
+    <h4 class="o-nas-tag">II Wojna Światowa</h4>
+  </div>
+  <p class="o-nas-opis-sekcji">Lorem ipsum dolor sit amet consectetur adipisicing elit. At assumenda quia eius aut doloribus sunt sequi labore, magnam nostrum saepe laborum minus nihil dolores nam dolorum autem error et veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorum sunt, iure consequatur placeat cum qui ducimus nesciunt. Beatae, odio quasi. Amet temporibus, repellendus cum vero consectetur aperiam nihil corporis?</p>
+  <button class="o-nas-przycisk">Dowiedz się więcej ></button>
+</div>
+</div>
+</div>
+</section>
+
+<div class="RANDOM"></div>
+
+<section id="aktualnosci">
+  <div id="aktualnosci-kontener">
+    <div id="aktualnosci-naglowek">
+      <span class="naglowek-linia"><h1 class="naglowek">AKTUALNOŚCI</h1></span>
+    </div>
+    <p id="aktualnosci-opis">W naszym dziale aktualności otwieramy dla Ciebie kurtynę na najświeższe wydarzenia i kulisy życia Teatru Ethereal. Bądź na bieżąco z premierami, ekskluzywnymi wywiadami z twórcami oraz doniesieniami z teatralnych festiwali. Odkryj tajniki przygotowań do nowych spektakli i śledź, jak nasza scena ewoluuje, by zaskoczyć Cię jeszcze bardziej.</p>
+    <div class="aktualnosci-wpis">
+      <div class="aktualnosci-wpis-zdjecie">
+        <span class="udaje-zdjecie"></span>
+      </div>
+      <div class="aktualnosci-wpis-opis">
+        <div class="aktualnosci-wpis-data-autor">
+          <div class="aktualnosci-wpis-data-linia">
+            <span class="aktualnosci-wpis-linia"></span>
+            <p class="aktualnosci-wpis-data">10 stycznia 2024</p>
+          </div>
+            <p class="aktualnosci-wpis-autor"><span class="aktualnosci-wpis-autor-bold">Autor: </span>Rafał Królikowski</p>
+        </div>
+        <h2 class="aktualnosci-wpis-tytul">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="aktualnosci-wpis-tresc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium dolor, nesciunt suscipit minus est, consequuntur voluptate consequatur officiis voluptatem commodi error distinctio cumque quidem inventore temporibus. Officiis ex similique autem.</p>
+        <button class="aktualnosci-przycisk-czytaj">Czytaj dalej</button>
+      </div>
+    </div>
+    <div class="aktualnosci-wpis">
+      <div class="aktualnosci-wpis-zdjecie">
+        <span class="udaje-zdjecie"></span>
+      </div>
+      <div class="aktualnosci-wpis-opis">
+        <div class="aktualnosci-wpis-data-autor">
+          <div class="aktualnosci-wpis-data-linia">
+            <span class="aktualnosci-wpis-linia"></span>
+            <p class="aktualnosci-wpis-data">10 stycznia 2024</p>
+          </div>
+            <p class="aktualnosci-wpis-autor"><span class="aktualnosci-wpis-autor-bold">Autor: </span>Rafał Królikowski</p>
+        </div>
+        <h2 class="aktualnosci-wpis-tytul">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="aktualnosci-wpis-tresc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium dolor, nesciunt suscipit minus est, consequuntur voluptate consequatur officiis voluptatem commodi error distinctio cumque quidem inventore temporibus. Officiis ex similique autem.</p>
+        <button class="aktualnosci-przycisk-czytaj">Czytaj dalej</button>
+      </div>
+    </div>
+    <div class="aktualnosci-wpis">
+      <div class="aktualnosci-wpis-zdjecie">
+        <span class="udaje-zdjecie"></span>
+      </div>
+      <div class="aktualnosci-wpis-opis">
+        <div class="aktualnosci-wpis-data-autor">
+          <div class="aktualnosci-wpis-data-linia">
+            <span class="aktualnosci-wpis-linia"></span>
+            <p class="aktualnosci-wpis-data">10 stycznia 2024</p>
+          </div>
+            <p class="aktualnosci-wpis-autor"><span class="aktualnosci-wpis-autor-bold">Autor: </span>Rafał Królikowski</p>
+        </div>
+        <h2 class="aktualnosci-wpis-tytul">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p class="aktualnosci-wpis-tresc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium dolor, nesciunt suscipit minus est, consequuntur voluptate consequatur officiis voluptatem commodi error distinctio cumque quidem inventore temporibus. Officiis ex similique autem.</p>
+        <button class="aktualnosci-przycisk-czytaj">Czytaj dalej</button>
+      </div>
+    </div>
+    <button id="aktualnosci-przycisk-zobacz" class="zobacz-wszystkie">ZOBACZ WSZYSTKIE ></button>
+  </div>
+</section>
+
 
       </main>
+      <script src="javascript/strona_glowna/skrypt_wypisujacy_recenzje.js"></script>
     </body>
 </html>

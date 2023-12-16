@@ -5,29 +5,29 @@
   display: flex;
   align-items: center;
 }
-.kontener{
+#przerywnik-kontener{
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   column-gap: 40px;
 }
-.kontener h1, .kontener h3, .kontener p{
+#przerywnik-kontener h1, #przerywnik-kontener h3, #przerywnik-kontener p{
   text-align: center;
   color: var(--white);
 }
-.kontener h1{
+#przerywnik-kontener h1{
   font-size: 50px;
   font-weight: bold;
 }
-.kontener h3{
+#przerywnik-kontener h3{
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.kontener p{
+#przerywnik-kontener p{
   opacity: 0.6;
 }
-.kreska{
+.przerywnik-linia{
   height: 150px;
   width: 2px;
   background-color: rgb(47, 46, 46);

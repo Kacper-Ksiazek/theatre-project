@@ -10,7 +10,8 @@
   gap: 80px;
 }
 .o-nas-przycisk{
-  padding: 12px 28px;
+  padding: 12px 0;
+  width: 200px;
   font-size: 16px;
   border-radius: 6px;
   background-color: var(--primary);

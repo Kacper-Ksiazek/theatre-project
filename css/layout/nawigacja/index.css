@@ -8,6 +8,18 @@ header#layout-navigation {
     padding: 12px 0;
 }
 
+header#layout-navigation[data-navigation-state="no-scroll"] {
+    background-color: yellow;
+}
+
+header#layout-navigation[data-navigation-state="visible"] {
+    background-color: green;
+}
+
+header#layout-navigation[data-navigation-state="hidden"] {
+    background-color: red;
+}
+
 header#layout-navigation > div.content {
     display: flex;
     align-items: center;

@@ -11,6 +11,8 @@ button#scroll-to-the-top {
     cursor: pointer;
     z-index: 100;
     color: var(--header-on-dark);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 button#scroll-to-the-top > i.fa-arrow-up {
@@ -25,4 +27,14 @@ button#scroll-to-the-top > i.fa-arrow-up {
 button#scroll-to-the-top:hover {
     background: #fff;
     color: var(--header-on-light);
+}
+
+button#scroll-to-the-top:disabled {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    button#scroll-to-the-top {
+        inset: auto 12px 12px auto;
+    }
 }

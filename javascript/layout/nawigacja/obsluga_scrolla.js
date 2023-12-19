@@ -1,4 +1,4 @@
-// Stale
+// Constants
 const DO_NOT_CARE_THRESHOLD = 120; // Nie interesuje nas scrollowanie poniżej 240px
 const NAVIGATION_SELECTOR = "#layout-navigation";
 
@@ -10,7 +10,6 @@ const DATA_ATTRIBUTE_VALUES = {
 };
 
 const navigationWrapper = document.querySelector(NAVIGATION_SELECTOR);
-
 // Jeśli nie znaleziono nawigacji, to nie ma sensu dalej działać
 if (!navigationWrapper) throw new Error("Nie znaleziono głównej nawigacji strony! Szukany selektor to: #layout-navigation");
 

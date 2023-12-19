@@ -1,0 +1,28 @@
+button#scroll-to-the-top {
+    position: fixed;
+    inset: auto 32px 32px auto;
+    width: 48px;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    background: #000;
+    border: 1px solid var(--sub-text-on-dark);
+    outline: none;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+    z-index: 100;
+    color: var(--header-on-dark);
+}
+
+button#scroll-to-the-top > i.fa-arrow-up {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    font-size: 24px;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
+}
+
+button#scroll-to-the-top:hover {
+    background: #fff;
+    color: var(--header-on-light);
+}

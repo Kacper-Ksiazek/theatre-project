@@ -1,0 +1,81 @@
+header#layout-navigation {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100vw;
+    z-index: 1000;
+    padding: 12px 0;
+}
+
+header#layout-navigation > div.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+    max-width: 1440px;
+    width: calc(100vw - 32px);
+    margin: 0 auto;
+}
+
+header#layout-navigation > div.content .layout-nav-separator {
+    width: 2px;
+    height: 14px;
+    background: var(--sub-text-on-dark);
+}
+
+header#layout-navigation > div.content > #main-page-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6px;
+}
+
+header#layout-navigation > div.content > #main-page-logo > h3 {
+    font-size: 36px;
+}
+header#layout-navigation > div.content > #main-page-logo > span {
+    font-size: 16px;
+    color: var(--text-on-dark);
+    transform: translateY(-6px);
+}
+
+header#layout-navigation > div.content > span.invisible-space-filler {
+    flex-grow: 1;
+}
+
+header#layout-navigation > div.content > nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header#layout-navigation > div.content > nav > a {
+    color: var(--text-on-dark);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+header#layout-navigation > div.content > nav > a:hover {
+    color: var(--header-on-dark);
+}
+
+header#layout-navigation > div.content > #language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header#layout-navigation > div.content > #language-switcher > .language {
+    color: var(--text-on-dark);
+    transition: color 0.2s ease-in-out;
+}
+
+header#layout-navigation > div.content > #language-switcher > .language.active {
+    color: var(--header-on-dark);
+}
+
+header#layout-navigation > div.content > #language-switcher > .language:not(&.active):hover {
+    color: var(--header-on-dark);
+    cursor: pointer;
+}

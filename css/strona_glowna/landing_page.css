@@ -1,36 +1,35 @@
-#landing-page, header{
-  width: 100vw;
-  background-color: var(--black);
-  color: var(--white);
+#landing-page,
+header {
+    width: 100vw;
+    background-color: var(--black);
+    color: var(--white);
 }
-#landing-page-kontener, #header-kontener{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 90px;
+#landing-page-kontener,
+#header-kontener {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 90px;
 }
-#landing-page-kontener{
-  display: flex;
-  flex-direction: column;
+#landing-page-kontener {
+    display: flex;
+    flex-direction: column;
 }
-#landing-page-naglowek{
-  text-align: center;
-  font-size: 80px;
-  margin-bottom: 30px;
+#landing-page-naglowek {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
 }
-#landing-page-opis{
-  text-align: center;
-  color: var(--text-on-dark);
-  font-size: 20px;
+#landing-page-opis {
+    text-align: center;
+    color: var(--text-on-dark);
+    font-size: 20px;
 }
-#header-kontener{
-  display: flex;
-  justify-content: space-between;
+#header-kontener {
+    display: flex;
+    justify-content: space-between;
 }
-#landing-page-zdjecie{
- align-self: center;
- margin-top: -240px;
- width: 100vw;
-}
-header{
-  padding-bottom: 100px;
+#landing-page-zdjecie {
+    align-self: center;
+    margin-top: -240px;
+    width: 100vw;
 }

@@ -1,0 +1,17 @@
+@import "./_keyframes.css";
+
+header#layout-navigation:not(&[data-navigation-state="no-scroll"]) > div.content {
+    padding: 0;
+}
+
+header#layout-navigation[data-navigation-state="no-scroll"] > div.content {
+    padding: 32px 64px;
+}
+
+header#layout-navigation[data-navigation-state="visible"] {
+    animation: fadeIn 0.2s ease-in-out both;
+}
+
+header#layout-navigation[data-navigation-state="hidden"] {
+    animation: fadeOut 0.2s ease-in-out both;
+}

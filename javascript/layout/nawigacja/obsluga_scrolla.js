@@ -1,5 +1,5 @@
 // Stale
-const DO_NOT_CARE_THRESHOLD = 240; // Nie interesuje nas scrollowanie poniżej 240px
+const DO_NOT_CARE_THRESHOLD = 120; // Nie interesuje nas scrollowanie poniżej 240px
 const NAVIGATION_SELECTOR = "#layout-navigation";
 
 const DATA_ATTRIBUTE_NAME = "data-navigation-state";
@@ -71,14 +71,14 @@ window.addEventListener("scroll", () => {
     //
     if (isScrollingBelowThreshold === true) return;
 
-    if (isScrollingUp === true && isNavigationVisible === false) {
+    if ((isScrollingUp === true || currentScrollPosition < 500) && isNavigationVisible === false) {
         // Jeśli scrollujemy w górę i nawigacja jest ukryta, to ją pokazujemy
         showNavigation();
         isNavigationVisible = true;
         isNavigationHidden = false;
     }
     // Jeśli scrollujemy w dół i nawigacja jest widoczna, to ją ukrywamy
-    else if (isScrollingUp === false && isNavigationHidden === false) {
+    else if (currentScrollPosition >= 500 && isScrollingUp === false && isNavigationHidden === false) {
         hideNavigation();
         isNavigationVisible = false;
         isNavigationHidden = true;

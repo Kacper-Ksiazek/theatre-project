@@ -1,3 +1,5 @@
+@import "./pojawianie_sie_i_znikanie.css";
+
 header#layout-navigation {
     display: flex;
     align-items: center;
@@ -5,19 +7,8 @@ header#layout-navigation {
     inset: 0 auto auto 0;
     width: 100vw;
     z-index: 1000;
-    padding: 12px 0;
-}
-
-header#layout-navigation[data-navigation-state="no-scroll"] {
-    background-color: yellow;
-}
-
-header#layout-navigation[data-navigation-state="visible"] {
-    background-color: green;
-}
-
-header#layout-navigation[data-navigation-state="hidden"] {
-    background-color: red;
+    padding: 4px 0;
+    box-shadow: 0 0 1px 0 var(--sub-text-on-dark);
 }
 
 header#layout-navigation > div.content {
@@ -25,9 +16,10 @@ header#layout-navigation > div.content {
     align-items: center;
     justify-content: flex-end;
     gap: 64px;
-    max-width: 1440px;
-    width: calc(100vw - 32px);
+    width: calc(100vw - 128px);
     margin: 0 auto;
+    max-width: 1440px;
+    transition: padding 0.2s ease-in-out;
 }
 
 header#layout-navigation > div.content .layout-nav-separator {

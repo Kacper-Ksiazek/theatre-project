@@ -1,0 +1,19 @@
+@import "./sekcja-glowna-jasna.css";
+
+.zobacz-wszystkie {
+    font-size: 16px;
+    height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    background-color: var(--black);
+    color: var(--white);
+    width: 500px;
+    align-self: center;
+    margin-top: 10px;
+    border-color: #000;
+}
+
+.zobacz-wszystkie:hover {
+    opacity: 0.74;
+}

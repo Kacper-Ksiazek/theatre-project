@@ -1,75 +1,63 @@
-#recenzje{
-  width: 100vw;
+#recenzje #recenzje-kontent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: space-between;
+    gap: 24px;
 }
-#recenzje-kontener{
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0;
+
+#recenzje #recenzje-kontent > div {
+    width: calc((100% - 48px * 2) / 3);
+    text-align: center;
+    margin-bottom: 24px;
 }
-.zobacz-wszystkie{
-  font-size: 16px;
-  height: 50px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  background-color: var(--black);
-  color: var(--white);
-  width: 500px;
-  align-self: center;
-  margin-top: 10px;
+#recenzje .data {
+    color: var(--sub-text-on-light);
+    font-size: 14px;
+    margin-top: 10px;
 }
-.zobacz-wszystkie:hover{
-  opacity: 0.74;
+#recenzje .ocena {
+    display: flex;
+    width: 100%;
+    margin: 16px auto;
+    justify-content: center;
 }
-#recenzje-kontent{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 0;
-  justify-content: space-between;
-  gap: 40px;
+#recenzje .ocena i {
+    font-size: 32px;
 }
-#recenzje-opis{
-  color: var(--text-on-light);
-  margin-bottom: 10px;
-  margin-top: -10px;
+#recenzje #recenzje-kontent h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
 }
-#recenzje-kontent div{
-  width: 30%;
-  text-align: center
+#recenzje .opis {
+    color: var(--text-on-light);
+    margin-top: 16px;
 }
-.data{
-  color: var(--sub-text-on-light);
-  font-size: 14px;
-  margin-top: 10px;
+#recenzje #recenzje-kontent h3::after {
+    content: "";
+    background-color: var(--separator-on-light);
+    width: 160px;
+    height: 2px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.ocena{
-  display: flex;
-  width: 100%;
-  margin: 16px auto;
-  justify-content: center;
+
+@media (max-width: 1200px) {
+    #recenzje #recenzje-kontent > div {
+        width: calc((100% - 24px) / 2);
+    }
 }
-.ocena i{
-  font-size: 32px;
-}
-#recenzje-kontent h3{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  position: relative;
-  
-}
-.opis{
-  color: var(--text-on-light);
-  margin-top: 16px;
-}
-#recenzje-kontent h3::after{
-  content: "";
-  background-color: var(--separator-on-light);
-  width: 160px;
-  height: 2px;
-  position: absolute;
-  top: 36px;
-  left: 98px;
+
+@media (max-width: 600px) {
+    #recenzje #recenzje-kontent > div {
+        width: 100%;
+    }
+
+    #recenzje .zobacz-wszystkie {
+        width: 100%;
+    }
 }

@@ -19,6 +19,17 @@ main {
     margin-top: 80px;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+    background: var(--light-background);
+}
+body::-webkit-scrollbar-track {
+    border-left: 2px solid rgba(0, 0, 0, 0.05);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
 button,
 input,
 input::placeholder,

@@ -1,0 +1,18 @@
+.sekcja-czarny-przerywnik-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+.sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
+    max-width: 1200px;
+    width: calc(100vw - 32px);
+}
+
+@media (max-width: 600px) {
+    .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
+        width: calc(100vw - 16px);
+    }
+}

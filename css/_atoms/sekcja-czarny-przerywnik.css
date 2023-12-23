@@ -4,6 +4,12 @@
     align-items: center;
     width: 100vw;
     background-color: var(--black);
+    color: var(--white);
+}
+
+.sekcja-czarny-przerywnik-wrapper .zobacz-wiecej {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {

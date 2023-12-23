@@ -1,7 +1,7 @@
 @import "./_keyframes.css";
 
 header#layout-navigation:not(&[data-navigation-state="no-scroll"]) > div.content {
-    padding: 0;
+    padding: 4px 0;
 }
 
 header#layout-navigation[data-navigation-state="no-scroll"] {
@@ -12,10 +12,24 @@ header#layout-navigation[data-navigation-state="no-scroll"] > div.content {
     padding: 32px 64px;
 }
 
-header#layout-navigation[data-navigation-state="visible"] {
-    animation: fadeIn 0.2s ease-in-out both;
+@media (min-width: 1001px) {
+    header#layout-navigation[data-navigation-state="visible"] {
+        animation: fadeIn 0.2s ease-in-out both;
+    }
+
+    header#layout-navigation[data-navigation-state="hidden"] {
+        animation: fadeOut 0.2s ease-in-out both;
+    }
 }
 
-header#layout-navigation[data-navigation-state="hidden"] {
-    animation: fadeOut 0.2s ease-in-out both;
+@media (max-width: 800px) {
+    header#layout-navigation[data-navigation-state="no-scroll"] > div.content {
+        padding: 32px 32px;
+    }
+}
+
+@media (max-width: 800px) {
+    header#layout-navigation[data-navigation-state="no-scroll"] > div.content {
+        padding: 24px 16px;
+    }
 }

@@ -15,8 +15,7 @@ header#layout-navigation > div.content {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 64px;
-    width: calc(100vw - 128px);
+    width: calc(100vw - 64px);
     margin: 0 auto;
     max-width: 1440px;
     transition: padding 0.2s ease-in-out;
@@ -48,38 +47,129 @@ header#layout-navigation > div.content > span.invisible-space-filler {
     flex-grow: 1;
 }
 
-header#layout-navigation > div.content > nav {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper {
+    display: flex;
+    gap: 64px;
+}
+
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > nav {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-header#layout-navigation > div.content > nav > a {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > nav > a {
     color: var(--text-on-dark);
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
-header#layout-navigation > div.content > nav > a:hover {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > nav > a:hover {
     color: var(--header-on-dark);
 }
 
-header#layout-navigation > div.content > #language-switcher {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > #language-switcher {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-header#layout-navigation > div.content > #language-switcher > .language {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > #language-switcher > .language {
     color: var(--text-on-dark);
     transition: color 0.2s ease-in-out;
 }
 
-header#layout-navigation > div.content > #language-switcher > .language.active {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > #language-switcher > .language.active {
     color: var(--header-on-dark);
 }
 
-header#layout-navigation > div.content > #language-switcher > .language:not(&.active):hover {
+header#layout-navigation > div.content > div#main-menu-actions-wrapper > #language-switcher > .language:not(&.active):hover {
     color: var(--header-on-dark);
     cursor: pointer;
+}
+
+@media (min-width: 1001px) {
+    button#open-mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    header#layout-navigation > div.content > #main-page-logo,
+    header#layout-navigation > div.content > #open-mobile-menu {
+        position: relative;
+        z-index: 1001;
+    }
+
+    header#layout-navigation > div.content > div#main-menu-actions-wrapper {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        left: 0;
+        height: calc(100dvh - 64px);
+        width: 100vw;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: #000;
+        gap: 96px;
+        padding: 64px 8px;
+        align-items: center;
+        font-size: 28px;
+        transition: transform 0.3s;
+        transform: translateX(100%);
+    }
+
+    header#layout-navigation > div.content > div#main-menu-actions-wrapper.opened {
+        transform: translatex(0);
+    }
+
+    header#layout-navigation > div.content > div#main-menu-actions-wrapper > nav {
+        flex-direction: column;
+    }
+
+    header#layout-navigation > div.content > div#main-menu-actions-wrapper .layout-nav-separator:not(.vertical) {
+        width: 32px;
+        height: 2px;
+    }
+    :q header#layout-navigation > div.content > div#main-menu-actions-wrapper .language {
+        width: 80px;
+        text-align: center;
+    }
+
+    header#layout-navigation > div.content > div#main-menu-actions-wrapper .layout-nav-separator.vertical {
+        height: 42px;
+        margin: 0 8px;
+    }
+
+    button#open-mobile-menu {
+        font-size: 36px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        width: 48px;
+        height: 48px;
+    }
+
+    button#open-mobile-menu > i {
+        position: absolute;
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    button#open-mobile-menu > i.fa-bars {
+        opacity: 1;
+    }
+
+    button#open-mobile-menu > i.fa-xmark {
+        opacity: 0;
+    }
+
+    button#open-mobile-menu.opened > i.fa-bars {
+        opacity: 0;
+    }
+
+    button#open-mobile-menu.opened > i.fa-xmark {
+        opacity: 1;
+    }
 }

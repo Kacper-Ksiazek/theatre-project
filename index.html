@@ -37,23 +37,26 @@
 
                 <span class="invisible-space-filler"></span>
 
-                <nav>
-                    <a href="index.html">Strona główna</a>
-                    <div class="layout-nav-separator"></div>
+                <button id="open-mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
 
-                    <a href="">Repertuar</a>
-                    <div class="layout-nav-separator"></div>
-
-                    <a href="rezerwacja.html">Cennik</a>
-                    <div class="layout-nav-separator"></div>
-
-                    <a href="kontakt.html">Kontakt</a>
-                </nav>
-
-                <div id="language-switcher">
-                    <span class="language active">PL</span>
-                    <div class="layout-nav-separator"></div>
-                    <span class="language">ENG</span>
+                <div id="main-menu-actions-wrapper">
+                    <nav>
+                        <a href="index.html">Strona główna</a>
+                        <div class="layout-nav-separator"></div>
+                        <a href="">Repertuar</a>
+                        <div class="layout-nav-separator"></div>
+                        <a href="rezerwacja.html">Cennik</a>
+                        <div class="layout-nav-separator"></div>
+                        <a href="kontakt.html">Kontakt</a>
+                    </nav>
+                    <div id="language-switcher">
+                        <span class="language active">PL</span>
+                        <div class="layout-nav-separator vertical"></div>
+                        <span class="language">ENG</span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -83,21 +86,25 @@
             <div class="RANDOMOWY"></div>
 
             <!-- Przerywnik pokazujący teatr w liczbach  -->
-            <section id="przerywnik">
-                <div id="przerywnik-kontener">
-                    <div>
+            <section id="przerywnik-liczby" class="sekcja-czarny-przerywnik-wrapper">
+                <div id="przerywnik-liczby-kontener" class="sekcja-czarny-przerywnik-tresc">
+                    <div class="kolumna">
                         <h1>536 lat</h1>
                         <h3>funkcjonowania</h3>
                         <p>Przez 536 lat Teatr Ethereal zachowuje tradycję teatralną i niepowtarzalny charakter, który wdziera się w serca pokoleń.</p>
                     </div>
+
                     <span class="przerywnik-linia"></span>
-                    <div>
+
+                    <div class="kolumna">
                         <h1>132 mln</h1>
                         <h3>sprzedanych biletów</h3>
                         <p>To nie tylko liczba. To wynik pasji i zaangażowania naszej widowni, która wspólnie z nami podróżuje przez fascynujący świat sztuki.</p>
                     </div>
+
                     <span class="przerywnik-linia"></span>
-                    <div>
+
+                    <div class="kolumna">
                         <h1>13 000 +</h1>
                         <h3>unikalnych spektakli</h3>
                         <p>Ponad 13000 unikalnych spektakli odsłoniło przed widzem niekończący się świat narracji, interpretacji, artystycznych eksperymentów.</p>
@@ -398,6 +405,7 @@
         <!--  -->
         <script src="javascript/layout/przewijanie_do_gory.js"></script>
         <script src="javascript/layout/nawigacja/obsluga_scrolla.js"></script>
+        <script src="javascript/layout/nawigacja/wersja_mobilna.js"></script>
         <!--  -->
         <!-- JS / Strona główna-->
         <!--  -->

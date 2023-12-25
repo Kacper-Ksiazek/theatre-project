@@ -14,7 +14,7 @@
 .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .naglowek {
     position: relative;
     height: 84px;
-    margin: 32px 0 0px 0;
+    margin: 32px 0 16px 0;
 }
 .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .naglowek::before {
     content: "";
@@ -40,12 +40,6 @@
     right: 64px;
 }
 
-.jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .glowny-opis {
-    color: var(--text-on-light);
-    text-align: justify;
-    margin: 48px 0 16px 0;
-}
-
 @media (max-width: 800px) {
     .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .naglowek {
         margin: 64px 0 48px 0;
@@ -54,14 +48,16 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .glowny-opis {
-        text-align: center;
+    .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .ogolny-opis-sekcji {
         margin-bottom: 32px;
     }
 }
 
 @media (max-width: 600px) {
+    .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc > .naglowek {
+        margin: 64px 0 16px 0;
+    }
     .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc {
-        width: calc(100vw - 16px);
+        width: calc(100vw - 24px);
     }
 }

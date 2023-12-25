@@ -19,6 +19,6 @@
 
 @media (max-width: 600px) {
     .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
-        width: calc(100vw - 16px);
+        width: calc(100vw - 24px);
     }
 }

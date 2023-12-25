@@ -1,8 +1,8 @@
-#newsletter {
+#newsletter #newsletter {
     width: 100vw;
     background-color: var(--black);
 }
-#newsletter-kontener {
+#newsletter #newsletter-kontener {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -11,21 +11,22 @@
     color: var(--white);
     padding: 50px 0;
 }
-#newsletter-naglowek-badz-na-biezaco {
+#newsletter #newsletter-naglowek-badz-na-biezaco {
     font-size: 42px;
+    text-align: center;
 }
-#newsletter-opis {
+#newsletter #newsletter-opis {
     text-align: center;
     color: var(--text-on-dark);
     margin: 30px 0;
 }
-#newsletter-naglowek-zapisz {
+#newsletter #newsletter-naglowek-zapisz {
     font-size: 24px;
 }
-#newsletter-input-RODO {
+#newsletter #newsletter-input-RODO {
     display: none;
 }
-#newsletter-custom-input {
+#newsletter #newsletter-custom-input {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,36 +40,42 @@
     border: 1px solid var(--white);
     transition: background-color 0.2s;
 }
-#newsletter-custom-input > i {
+#newsletter #newsletter-custom-input > i {
     opacity: 0;
     transition: opacity 0.2s;
     color: #000;
     font-size: 24px;
 }
-#newsletter-custom-input.checked {
+
+#newsletter #newsletter-custom-input.checked {
     background-color: #fff;
 }
 
-#newsletter-custom-input.checked > i {
+#newsletter #newsletter-custom-input.checked > i {
     opacity: 1;
 }
-#newsletter-klauzula-kontener {
+
+#newsletter #newsletter-klauzula-kontener {
     display: flex;
     align-items: center;
     gap: 20px;
     justify-content: center;
 }
-#newsletter-input-RODO:hover {
+
+#newsletter #newsletter-input-RODO:hover {
     opacity: 0.6;
 }
-#newsletter-klauzula-RODO {
+
+#newsletter #newsletter-klauzula-RODO {
     font-weight: bold;
     color: var(--white);
 }
-#newsletter-label-RODO {
+
+#newsletter #newsletter-label-RODO {
     color: var(--text-on-dark);
 }
-#newsletter-dolacz {
+
+#newsletter #newsletter-dolacz {
     font-size: 16px;
     height: 50px;
     border-radius: 6px;
@@ -76,15 +83,15 @@
     transition: opacity 0.2s;
     background-color: var(--white);
     color: var(--black);
-    width: 500px;
     margin-top: 40px;
 }
-#newsletter-dolacz:hover {
+
+#newsletter #newsletter-dolacz:hover {
     opacity: 0.74;
 }
-#newsletter-input-email {
-    padding: 14px 180px;
-    font-size: 15px;
+
+#newsletter #newsletter-input-email {
+    font-size: 18px;
     text-align: center;
     display: block;
     margin-top: 12px;
@@ -92,5 +99,8 @@
     color: var(--text-on-dark);
     background-color: rgb(44, 43, 43);
     border: 1px solid var(--white);
+    width: calc(100vw - 32px);
+    height: 50px;
+    max-width: 480px;
     border-radius: 4px;
 }

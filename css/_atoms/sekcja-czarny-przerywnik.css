@@ -17,8 +17,16 @@
     width: calc(100vw - 32px);
 }
 
+.sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .ogolny-opis-sekcji {
+    text-align: center;
+}
+
 @media (max-width: 600px) {
     .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
         width: calc(100vw - 24px);
+    }
+
+    .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .ogolny-opis-sekcji {
+        text-align: justify;
     }
 }

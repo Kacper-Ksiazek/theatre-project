@@ -8,6 +8,11 @@ header#layout-navigation[data-navigation-state="no-scroll"] {
     box-shadow: none;
 }
 
+header#layout-navigation[data-navigation-state="no-scroll"].jasny-motyw {
+    background-color: var(--light-background);
+    color: #000;
+}
+
 header#layout-navigation[data-navigation-state="no-scroll"] > div.content {
     padding: 32px 64px;
 }

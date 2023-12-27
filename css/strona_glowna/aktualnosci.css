@@ -97,3 +97,12 @@
     top: -20px;
     left: 56px;
 }
+.aktualnosci-wpis-zdjecie > .aktualnosci-wpis-autor{
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+}
+#aktualnosci-wpis-autor-odwrocony{
+    right: 0;
+    left: auto;
+}

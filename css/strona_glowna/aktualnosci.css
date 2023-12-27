@@ -7,13 +7,6 @@
     display: flex;
     flex-direction: column;
 }
-
-.udaje-zdjecie {
-    display: block;
-    background-color: red;
-    height: 400px;
-    width: 630px;
-}
 .aktualnosci-wpis {
     display: flex;
     margin: 60px 0;
@@ -64,10 +57,43 @@
     opacity: 0.7;
 }
 .aktualnosci-wpis-tytul {
-    font-size: 44px;
-    font-weight: 900;
+    text-align: left;
+    font-size: 60px;
     margin-bottom: 12px;
 }
 #aktualnosci-przycisk-zobacz {
     margin-top: 60px;
+}
+#aktualnosci-opis{
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+.aktualnosci-wpis-zdjecie{
+    position: relative;
+    padding: 0 80px;
+}
+.aktualnosci-wpis-zdjecie img{
+    width: 440px;
+    border-radius: 4px;
+}
+.aktualnosci-szary-prostokat{
+    background-color: var(--sub-text-on-light);
+    opacity: 0.4;
+    height: 300px;
+    width: 300px;
+    right: 20px;
+    bottom: -36px;
+}
+.aktualnosci-bezowy-prostokat, .aktualnosci-szary-prostokat{
+    position: absolute;
+    z-index: -1;
+    display: block;
+    border-radius: 4px;
+}
+.aktualnosci-bezowy-prostokat{
+    height: 200px;
+    width: 200px;
+    background-color: var(--primary);
+    top: -20px;
+    left: 56px;
 }

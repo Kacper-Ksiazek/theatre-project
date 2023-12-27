@@ -42,12 +42,8 @@
 #newsletter #newsletter-custom-input > i {
     opacity: 0;
     transition: opacity 0.2s;
-    color: #000;
+    color: #fff;
     font-size: 24px;
-}
-
-#newsletter #newsletter-custom-input.checked {
-    background-color: #fff;
 }
 
 #newsletter #newsletter-custom-input.checked > i {
@@ -93,7 +89,7 @@
     font-size: 18px;
     text-align: center;
     display: block;
-    margin-top: 12px;
+    margin-top: 16px;
     margin-bottom: 34px;
     color: var(--text-on-dark);
     background-color: rgb(44, 43, 43);
@@ -107,6 +103,5 @@
 
 #newsletter #newsletter-input-email:focus {
     outline: none;
-    background-color: #fff;
-    color: #000;
+    color: #fff;
 }

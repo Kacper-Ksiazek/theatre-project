@@ -1,6 +1,7 @@
 @import "./pojawianie_sie_i_znikanie.css";
 
 header#layout-navigation {
+    position: relative;
     display: flex;
     align-items: center;
     position: fixed;
@@ -12,6 +13,29 @@ header#layout-navigation {
     background-color: var(--black);
     color: var(--white);
     transition: all 0.2s ease-in-out;
+}
+
+header#layout-navigation ~ main {
+    position: relative;
+    z-index: 1;
+}
+
+header#layout-navigation ~ main::before {
+    content: "";
+    position: absolute;
+    top: -140px;
+    left: 0;
+    width: 100vw;
+    height: 140px;
+    z-index: -1;
+}
+
+header#layout-navigation:not(.jasny-motyw) ~ main::before {
+    background-color: var(--black);
+}
+
+header#layout-navigation.jasny-motyw ~ main::before {
+    background-color: var(--light-background);
 }
 
 header#layout-navigation > div.content {

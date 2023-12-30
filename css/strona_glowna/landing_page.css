@@ -1,34 +1,114 @@
 #landing-page {
     background-color: var(--black);
+    position: relative;
 }
 
 #landing-page-kontener,
 #header-kontener {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 90px;
 }
 #landing-page-kontener {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-top: 24vh;
+    align-items: center;
 }
 #landing-page-naglowek {
     text-align: center;
     font-size: 80px;
     margin-bottom: 30px;
     color: var(--header-on-dark);
+    max-width: calc(100vw - 32px);
 }
 #landing-page-opis {
     text-align: center;
     color: var(--text-on-dark);
     font-size: 20px;
+    max-width: calc(100vw - 128px);
 }
 #header-kontener {
     display: flex;
     justify-content: space-between;
 }
 #landing-page-zdjecie {
-    align-self: center;
-    margin-top: -240px;
     width: 100vw;
+    background-image: url(/images/strona_glowna/ekran_powitalny/1920x1126.png);
+    height: 1126px;
+    margin-top: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media (max-width: 1540px) {
+    #landing-page-zdjecie {
+        height: 1155px;
+        background-image: url(/images/strona_glowna/ekran_powitalny/1540x1155.png);
+    }
+}
+
+@media (max-width: 1280px) {
+    #landing-page-naglowek {
+        font-size: 64px;
+    }
+    #landing-page-kontener {
+        padding-top: 16vh;
+    }
+    #landing-page-zdjecie {
+        height: 960px;
+        background-image: url(/images/strona_glowna/ekran_powitalny/1280x960.png);
+    }
+}
+
+@media (max-width: 1024px) {
+    #landing-page-opis {
+        max-width: calc(100vw - 64px);
+    }
+    #landing-page-zdjecie {
+        height: 768px;
+        background-image: url(/images/strona_glowna/ekran_powitalny/1024x768.png);
+    }
+}
+
+@media (max-width: 800px) {
+    #landing-page-naglowek {
+        font-size: 82px;
+    }
+    #landing-page-opis {
+        max-width: calc(100vw - 32px);
+    }
+    #landing-page-zdjecie {
+        height: 600px;
+        background-image: url(/images/strona_glowna/ekran_powitalny/800x600.png);
+    }
+}
+
+@media (max-width: 750px) {
+    #landing-page-naglowek {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 660px) {
+    #landing-page-naglowek {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 640px) {
+    #landing-page-kontener {
+        padding-top: 12vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #landing-page-kontener {
+        padding-top: 6vh;
+    }
+    #landing-page-zdjecie {
+        height: 360px;
+        background-image: url(/images/strona_glowna/ekran_powitalny/480x360.png);
+    }
 }

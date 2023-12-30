@@ -1,9 +1,4 @@
-#aktualnosci {
-    width: 100vw;
-}
 #aktualnosci-kontener {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +19,7 @@
 }
 .aktualnosci-wpis-data {
     position: absolute;
-    background-color: var(--white);
+    background-color: var(--light-background);
     left: 30px;
     padding: 0 16px;
 }

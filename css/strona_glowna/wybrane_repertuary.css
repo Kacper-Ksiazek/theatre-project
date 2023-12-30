@@ -1,0 +1,103 @@
+.tab{
+  display: inline-block;
+  margin-left: 2em;
+}
+.wybrane-repertuary-spektakl{
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.wybrane-repertuary-spektakl-tytul{
+  font-size: 60px;
+}
+.wybrane-repertuary-pionowa-linia{
+  display: inline-block;
+  margin: 0 16px;
+  background-color: black;
+  height: 20px;
+  width: 2px;
+}
+.wybrane-repertuary-spektakl-szczegoly{
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.wybrane-repertuary-spektakl-szczegoly-bold{
+  font-weight: bold;
+  margin-right: 4px;
+}
+.wybrane-repertuary-spektakl-hashtags{
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.wybrane-repertuary-spektakl-przycisk{
+  background-color: var(--primary);
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 170px;
+  margin-right: 8px;
+  margin-top: 40px;
+}
+.wybrane-repertuary-spektakl-przycisk:hover, .wybrane-repertuary-spektakl-konkretny-termin:hover, .wybrane-repertuary-spektakl-kropki:hover{
+  opacity: 0.7;
+}
+.wybrane-repertuary-spektakl-naglowek-terminy{
+  font-size: 28px;
+  margin-top: 16px;
+}
+.wybrane-repertuary-spektakl-konkretny-opis{
+  margin-top: 14px;
+}
+.wybrane-repertuary-spektakl-konkretny-termin{
+  display: inline-block;
+  background-color: var(--separator-on-light);
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 4px;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.wybrane-repertuary-spektakl-zdjecie{
+  position: relative;
+}
+.wybrane-repertuary-spektakl-zdjecie img{
+  width: 420px;
+}
+.wybrane-repertuary-separator{
+  margin: 96px 0;
+  height: 4px;
+  width: 520px;
+  background-color: var(--separator-on-light);
+  display: block;
+}
+.wybrane-repertuary-zdjecie-prostokat{
+  height: 510px;
+  background-color: var(--separator-on-light);
+  width: 300px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -22px;
+  left: -22px;
+}
+#wybrane-repertuary-opis{
+  margin-bottom: 64px;
+}
+.wybrane-repertuary-spektakl-terminy{
+  display: flex;
+  align-items: center;
+}
+.wybrane-repertuary-spektakl-kropki{
+  font-size: 60px;
+  margin-left: 20px;
+  margin-top: -20px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}

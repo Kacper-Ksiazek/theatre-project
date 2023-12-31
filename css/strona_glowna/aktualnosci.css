@@ -120,7 +120,7 @@
     }
     .aktualnosci-wpis {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .aktualnosci-wpis-data-autor {
         margin: 128px 0 24px 0;

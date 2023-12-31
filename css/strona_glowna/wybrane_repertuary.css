@@ -70,13 +70,6 @@
 .wybrane-repertuary-spektakl-zdjecie img{
   width: 420px;
 }
-.wybrane-repertuary-separator{
-  margin: 96px 0;
-  height: 4px;
-  width: 520px;
-  background-color: var(--separator-on-light);
-  display: block;
-}
 .wybrane-repertuary-zdjecie-prostokat{
   height: 510px;
   background-color: var(--separator-on-light);
@@ -88,7 +81,7 @@
   left: -22px;
 }
 #wybrane-repertuary-opis{
-  margin-bottom: 64px;
+  margin-bottom: 100px;
 }
 .wybrane-repertuary-spektakl-terminy{
   display: flex;

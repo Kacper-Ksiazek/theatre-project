@@ -77,13 +77,6 @@
     width: 420px;
     border-radius: 10px;
 }
-.wybrane-repertuary-separator {
-    margin: 96px 0;
-    height: 4px;
-    width: 520px;
-    background-color: var(--separator-on-light);
-    display: block;
-}
 .wybrane-repertuary-zdjecie-prostokat {
     height: 510px;
     background-color: var(--separator-on-light);
@@ -143,9 +136,6 @@
 }
 
 @media (max-width: 600px) {
-    .wybrane-repertuary-separator {
-        width: 100%;
-    }
     .wybrane-repertuary-spektakl-przycisk {
         width: 100%;
     }

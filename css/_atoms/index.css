@@ -23,5 +23,19 @@
 .ogolny-opis-sekcji {
     color: inherit;
     text-align: justify;
-    margin: 16px 0 24px 0;
+    margin: 24px 0 48px 0;
+}
+
+.ogolny-separator {
+    margin: 96px 0;
+    height: 4px;
+    width: 520px;
+    background-color: var(--separator-on-light);
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .ogolny-separator {
+        width: 100%;
+    }
 }

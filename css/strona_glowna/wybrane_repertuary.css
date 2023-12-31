@@ -1,103 +1,186 @@
-.tab{
-  display: inline-block;
-  margin-left: 2em;
+.tab {
+    display: inline-block;
+
+    margin-left: 2em;
 }
-.wybrane-repertuary-spektakl{
-  display: flex;
-  align-items: center;
-  gap: 42px;
+.wybrane-repertuary-spektakl {
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+    gap: 42px;
 }
-.wybrane-repertuary-spektakl-tytul{
-  font-size: 60px;
+.wybrane-repertuary-spektakl-tytul {
+    font-size: 60px;
 }
-.wybrane-repertuary-pionowa-linia{
-  display: inline-block;
-  margin: 0 16px;
-  background-color: black;
-  height: 20px;
-  width: 2px;
+.wybrane-repertuary-pionowa-linia {
+    display: inline-block;
+    margin: 0 16px;
+    background-color: black;
+    height: 20px;
+    width: 2px;
 }
-.wybrane-repertuary-spektakl-szczegoly{
-  display: flex;
-  align-items: center;
-  margin-top: 6px;
+.wybrane-repertuary-spektakl-szczegoly {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
 }
-.wybrane-repertuary-spektakl-szczegoly-bold{
-  font-weight: bold;
-  margin-right: 4px;
+.wybrane-repertuary-spektakl-szczegoly-bold {
+    font-weight: bold;
+    margin-right: 4px;
 }
-.wybrane-repertuary-spektakl-hashtags{
-  color: var(--primary);
-  margin-bottom: 10px;
+.wybrane-repertuary-spektakl-hashtags {
+    color: var(--primary);
+    margin-bottom: 10px;
 }
-.wybrane-repertuary-spektakl-przycisk{
-  background-color: var(--primary);
-  padding: 12px 0;
-  font-size: 16px;
-  border-radius: 6px;
-  color: var(--white);
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  width: 170px;
-  margin-right: 8px;
-  margin-top: 40px;
+.wybrane-repertuary-spektakl-przycisk {
+    background-color: var(--primary);
+    padding: 12px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: 170px;
+    margin-top: 40px;
 }
-.wybrane-repertuary-spektakl-przycisk:hover, .wybrane-repertuary-spektakl-konkretny-termin:hover, .wybrane-repertuary-spektakl-kropki:hover{
-  opacity: 0.7;
+.wybrane-repertuary-spektakl-przycisk:nth-of-type(1) {
+    margin-right: 8px;
 }
-.wybrane-repertuary-spektakl-naglowek-terminy{
-  font-size: 28px;
-  margin-top: 16px;
+.wybrane-repertuary-spektakl-przycisk:hover,
+.wybrane-repertuary-spektakl-konkretny-termin:hover,
+.wybrane-repertuary-spektakl-kropki:hover {
+    opacity: 0.7;
 }
-.wybrane-repertuary-spektakl-konkretny-opis{
-  margin-top: 14px;
+.wybrane-repertuary-spektakl-naglowek-terminy {
+    font-size: 28px;
+    margin-top: 16px;
 }
-.wybrane-repertuary-spektakl-konkretny-termin{
-  display: inline-block;
-  background-color: var(--separator-on-light);
-  padding: 6px 12px;
-  border-radius: 4px;
-  text-align: center;
-  margin-right: 4px;
-  transition: opacity 0.2s;
-  cursor: pointer;
-  margin-top: 20px;
+.wybrane-repertuary-spektakl-konkretny-opis {
+    margin-top: 14px;
 }
-.wybrane-repertuary-spektakl-zdjecie{
-  position: relative;
+.wybrane-repertuary-spektakl-konkretny-termin {
+    display: inline-block;
+    background-color: var(--separator-on-light);
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 4px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    margin-top: 20px;
 }
-.wybrane-repertuary-spektakl-zdjecie img{
-  width: 420px;
+.wybrane-repertuary-spektakl-zdjecie {
+    position: relative;
 }
-.wybrane-repertuary-separator{
-  margin: 96px 0;
-  height: 4px;
-  width: 520px;
-  background-color: var(--separator-on-light);
-  display: block;
+.wybrane-repertuary-spektakl-zdjecie img {
+    width: 420px;
+    border-radius: 10px;
 }
-.wybrane-repertuary-zdjecie-prostokat{
-  height: 510px;
-  background-color: var(--separator-on-light);
-  width: 300px;
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: -22px;
-  left: -22px;
+.wybrane-repertuary-separator {
+    margin: 96px 0;
+    height: 4px;
+    width: 520px;
+    background-color: var(--separator-on-light);
+    display: block;
 }
-#wybrane-repertuary-opis{
-  margin-bottom: 64px;
+.wybrane-repertuary-zdjecie-prostokat {
+    height: 510px;
+    background-color: var(--separator-on-light);
+    width: 300px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -22px;
+    left: -22px;
 }
-.wybrane-repertuary-spektakl-terminy{
-  display: flex;
-  align-items: center;
+#wybrane-repertuary-opis {
+    margin-bottom: 64px;
 }
-.wybrane-repertuary-spektakl-kropki{
-  font-size: 60px;
-  margin-left: 20px;
-  margin-top: -20px;
-  cursor: pointer;
-  transition: opacity 0.2s;
+.wybrane-repertuary-spektakl-terminy {
+    display: flex;
+    align-items: center;
+}
+.wybrane-repertuary-spektakl-kropki {
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: -20px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+@media ((max-width: 1100px) and (min-width: 1001px)) or (max-width: 640px) {
+    .wybrane-repertuary-spektakl-konkretny-termin:nth-of-type(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wybrane-repertuary-spektakl {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+    .wybrane-repertuary-spektakl {
+        padding-left: 0;
+    }
+    .wybrane-repertuary-spektakl-zdjecie {
+        width: 100%;
+    }
+    .wybrane-repertuary-spektakl-zdjecie > img {
+        width: 100%;
+    }
+    .wybrane-repertuary-zdjecie-prostokat {
+        display: none;
+    }
+
+    .wybrane-repertuary-spektakl-przycisk {
+        width: calc(50% - 6px);
+        height: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wybrane-repertuary-separator {
+        width: 100%;
+    }
+    .wybrane-repertuary-spektakl-przycisk {
+        width: 100%;
+    }
+    .wybrane-repertuary-spektakl-przycisk:nth-of-type(1) {
+        margin-right: 0;
+    }
+    .wybrane-repertuary-spektakl-przycisk:nth-of-type(2) {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    .wybrane-repertuary-spektakl-tytul {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .wybrane-repertuary-spektakl-szczegoly {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .wybrane-repertuary-pionowa-linia {
+        display: none;
+    }
+
+    .wybrane-repertuary-spektakl-konkretny-termin:nth-of-type(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .wybrane-repertuary-spektakl-konkretny-termin:nth-of-type(3) {
+        display: none;
+    }
 }

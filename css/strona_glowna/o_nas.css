@@ -53,6 +53,20 @@
     margin-bottom: 40px;
     color: var(--text-on-light);
 }
+
+.o-nas-zdjecie-sekcja::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 360px;
+    background-color: var(--separator-on-light);
+    border-radius: 12px;
+}
+
 .o-nas-zdjecie {
     border-radius: 10px;
     width: 360px;
@@ -60,10 +74,126 @@
 }
 .o-nas-kontent {
     display: flex;
-    gap: 120px;
+    gap: 64px;
     align-items: center;
 }
+
+.o-nas-zdjecie-sekcja {
+    padding-left: 64px;
+    padding-right: 32px;
+    position: relative;
+}
+
+@media (min-width: 1001px) {
+    .o-nas-kontent:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .o-nas-kontent:nth-of-type(even) .o-nas-zdjecie-sekcja {
+        padding-right: 64px;
+        padding-left: 32px;
+    }
+}
+
 .o-nas-naglowek {
     padding-top: 40px;
     margin-bottom: -50px;
+}
+
+@media (max-width: 1200px) {
+    .o-nas-kontent {
+        gap: 32px;
+    }
+    .o-nas-tag {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .o-nas-opis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .o-nas-tag {
+        padding: 8px 24px;
+    }
+
+    .o-nas-kontent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .o-nas-zdjecie-sekcja {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .o-nas-opis-drugi-naglowek {
+        text-align: center;
+    }
+
+    .o-nas-zdjecie-sekcja {
+        width: 100%;
+        max-width: 480px;
+    }
+    .o-nas-zdjecie {
+        width: 100%;
+        aspect-ratio: 2/3;
+        height: auto;
+    }
+    .o-nas-przycisk {
+        width: 100%;
+        max-width: 480px;
+        height: 50px;
+    }
+
+    .o-nas-opis-sekcji {
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .o-nas-tag {
+        padding: 8px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #glowny-naglowek-doswiaczenie {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 520px) {
+    .o-nas-zdjecie-sekcja {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #glowny-naglowek-doswiaczenie {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 440px) {
+    .o-nas-opis-drugi-naglowek {
+        font-size: 48px;
+    }
+    #glowny-naglowek-doswiaczenie {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 400px) {
+    #glowny-naglowek-doswiaczenie {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    #glowny-naglowek-doswiaczenie {
+        font-size: 36px;
+    }
 }

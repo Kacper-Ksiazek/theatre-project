@@ -1,0 +1,93 @@
+.tab {
+  display: inline-block;
+  margin-left: 2em;
+}
+.lista-repertuarow-konkretny-spektakl{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.lista-repertuarow-konkretny-spektakl-przycisk{
+  background-color: var(--primary);
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  width: 170px;
+}
+.lista-repertuarow-konkretny-spektakl-przycisk:hover{
+  opacity: 0.7;
+}
+.lista-repertuarow-konkretny-spektakl-szczegoly{
+  display: flex;
+  align-items: center;
+  color: var(--text-on-light);
+}
+.lista-repertuarow-konkretny-spektakl-szczegoly-bold{
+  font-weight: bold;
+  color: var(--black);
+}
+.lista-repertuarow-pionowa-linia{
+  display: inline-block;
+  margin: 0 16px;
+  background-color: var(--black);
+  height: 20px;
+  width: 2px;
+}
+.lista-repertuarow-konkretny-spektakl-hashtags{
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.lista-repertuarow-konkretny-spektakl-tytul{
+  font-size: 60px;
+  margin: 24px 0;
+  line-height: 56px;
+}
+.lista-repertuarow-konkretny-spektakl-przycisk:nth-of-type(1) {
+  margin-right: 8px;
+}
+.lista-repertuarow-konkretny-spektakl-zdjecie{
+  position: relative;
+}
+.lista-repertuarow-konkretny-spektakl-zdjecie img{
+  width: 270px;
+  border-radius: 6px;
+}
+.lista-repertuarow-konkretny-spektakl-godzina, .lista-repertuarow-konkretny-spektakl-data, .lista-repertuarow-konkretny-spektakl-sala{
+  text-align: center;
+  padding: 14px 30px;
+  margin-bottom: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 8px;
+}
+.lista-repertuarow-konkretny-spektakl-data-miejsce h1{
+  font-size: 30px;
+}
+.lista-repertuarow-konkretny-spektakl-data-miejsce p{
+  color: var(--text-on-dark);
+}
+.lista-repertuarow-konkretny-spektakl-opis{
+  text-align: justify;
+  color: var(--text-on-light);
+  margin: 30px 0;
+}
+.lista-repertuarow-konkretny-spektakl-prostokat{
+  display: block;
+  background-color: var(--sub-text-on-light);
+  height: 390px;
+  width: 460px;
+  z-index: -1;
+  position: absolute;
+  top: -42px;
+  left: -30px;
+  opacity: 0.4;
+  border-radius: 4px;
+}
+.lista-repertuarow-konkretny-spektakl-data-miejsce div:nth-child(3){
+  margin-top: 60px
+}

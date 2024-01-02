@@ -1,9 +1,9 @@
-@import url(./landing_page.css);
-@import url(./o_nas.css);
-@import url(./przerywnik_lokalizacja.css);
-@import url(./przerywnik_z_liczbami.css);
-@import url(./recenzje.css);
-@import url(./aktualnosci.css);
-@import url(./wybrane_repertuary.css);
+@import "./o_nas.css";
+@import "./recenzje.css";
+@import "./aktualnosci.css";
+@import "./landing_page.css";
 @import "./rekomendacje.css";
-@import url(./wszystkie_repertuary.css);
+@import "./wybrane_repertuary.css";
+@import "./wszystkie_repertuary.css";
+@import "./przerywnik_z_liczbami.css";
+@import "./przerywnik_lokalizacja.css";

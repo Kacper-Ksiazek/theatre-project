@@ -1,0 +1,28 @@
+#wystapili-naglowek{
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.wystapili-czesc-rol-bold{
+  font-weight: bold;
+}
+.wystapili-czesc-rol-normal{
+  font-weight: normal;
+  color: var(--text-on-dark);
+}
+.wystapili-czesc-rol{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+#wystapili-role-kontener{
+  display: flex;
+  align-items: center;
+}
+.wystapili-pionowa-linia{
+  display: block;
+  height: 120px;
+  width: 2px;
+  background-color: var(--separator-on-dark);
+  margin: 0 30px;
+}

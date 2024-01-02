@@ -5,6 +5,17 @@
     width: 100vw;
     background-color: var(--black);
     color: var(--white);
+    padding: 48px 0;
+}
+
+.sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .sekcja-czarny-przerywnik-naglowek {
+    font-size: 42px;
+    text-align: center;
+}
+
+.sekcja-czarny-przerywnik-wrapper .ogolny-opis-sekcji {
+    color: var(--text-on-dark);
+    max-width: 1200px;
 }
 
 .sekcja-czarny-przerywnik-wrapper .zobacz-wiecej {
@@ -15,6 +26,9 @@
 .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
     max-width: 1200px;
     width: calc(100vw - 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .ogolny-opis-sekcji {

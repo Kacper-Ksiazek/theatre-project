@@ -7,14 +7,14 @@
     --red: #ff0000;
 
     /* KOLORY TEKSTU NA CIEMNYM TLE */
-    --header-on-dark: #fff; 
+    --header-on-dark: #fff;
     --text-on-dark: #b2b2b2;
     --sub-text-on-dark: #7f7f7f;
-    --separator-on-dark: #191919;
+    --separator-on-dark: #171717;
 
     /* KOLORY TEKSTU NA JASNYM TLE */
     --header-on-light: #000;
-    --text-on-light: #4D4C49;
-    --sub-text-on-light: #B2B0A9;
+    --text-on-light: #4d4c49;
+    --sub-text-on-light: #b2b0a9;
     --separator-on-light: rgba(206, 199, 199, 0.6);
 }

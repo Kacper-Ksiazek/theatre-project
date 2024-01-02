@@ -2,6 +2,10 @@
     width: 100vw;
 }
 
+.jasna-glowna-sekcja-wrapper .ogolny-opis-sekcji {
+    color: var(--text-on-light);
+}
+
 .jasna-glowna-sekcja-wrapper > .jasna-glowna-sekcja-tresc {
     max-width: 1200px;
     width: calc(100vw - 32px);

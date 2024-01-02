@@ -1,0 +1,114 @@
+#rekomendacje .sekcja-czarny-przerywnik-tresc {
+    max-width: 1400px;
+}
+
+#rekomendacje .rekomendacje-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 1200px;
+}
+#rekomendacje .separator-pomiedzy-rekomendacjami {
+    width: 2px;
+    height: 400px;
+    background-color: var(--separator-on-dark);
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#rekomendacje .rekomendacje-wrapper .img-wrapper {
+    --indent: 6px;
+
+    position: relative;
+    width: 100%;
+    padding: 0 0 var(--indent) var(--indent);
+}
+
+#rekomendacje .rekomendacje-wrapper .img-wrapper::before {
+    content: "";
+    inset: auto auto 0 0;
+    position: absolute;
+    width: 140px;
+    aspect-ratio: 1;
+    background-color: var(--primary);
+    z-index: 0;
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    top: 2px;
+}
+
+#rekomendacje .rekomendacje-wrapper .img-wrapper::before,
+#rekomendacje .rekomendacje-wrapper .rekomendacja img {
+    border-radius: 4px;
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja .tytul {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--header-on-dark);
+    margin-top: 12px;
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja .label {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-on-dark);
+    margin-bottom: 24px;
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja .label::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 2px;
+    background-color: var(--sub-text-on-dark);
+    opacity: 0.5;
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja .rekomendacja-opis {
+    text-align: center;
+    color: var(--text-on-dark);
+    font-size: 16px;
+}
+
+#rekomendacje .rekomendacje-wrapper .rekomendacja .data {
+    margin-top: 32px;
+    font-size: 16px;
+    color: var(--sub-text-on-dark);
+}
+
+#rekomendacje .paginacja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    gap: 8px;
+}
+
+#rekomendacje .paginacja .strona {
+    width: 48px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: var(--sub-text-on-dark);
+    cursor: pointer;
+}
+
+#rekomendacje .paginacja .strona.obecna {
+    background-color: var(--white);
+    transform: scaleY(1.6);
+}

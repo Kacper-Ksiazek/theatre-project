@@ -112,3 +112,31 @@
     background-color: var(--white);
     transform: scaleY(1.6);
 }
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    #rekomendacje .rekomendacje-wrapper .rekomendacja:nth-of-type(4),
+    #rekomendacje .rekomendacje-wrapper .separator-pomiedzy-rekomendacjami:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #rekomendacje .rekomendacje-wrapper .separator-pomiedzy-rekomendacjami {
+        display: none;
+    }
+}
+
+@media (min-width: 661px) and (max-width: 1000px) {
+    #rekomendacje .rekomendacje-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 64px;
+    }
+}
+
+@media (max-width: 660px) {
+    #rekomendacje .rekomendacje-wrapper {
+        flex-direction: column;
+    }
+}

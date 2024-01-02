@@ -5,11 +5,11 @@
     width: 100vw;
     background-color: var(--black);
     color: var(--white);
-    padding: 48px 0;
+    padding: 64px 0 48px 0;
 }
 
 .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .sekcja-czarny-przerywnik-naglowek {
-    font-size: 42px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -40,11 +40,26 @@
 }
 
 @media (max-width: 600px) {
+    .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .sekcja-czarny-przerywnik-naglowek {
+        font-size: 52px;
+    }
     .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
         width: calc(100vw - 24px);
     }
 
     .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .ogolny-opis-sekcji {
         text-align: justify;
+    }
+}
+
+@media (max-width: 460px) {
+    .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .sekcja-czarny-przerywnik-naglowek {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .sekcja-czarny-przerywnik-naglowek {
+        font-size: 42px;
     }
 }

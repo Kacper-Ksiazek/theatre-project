@@ -34,6 +34,12 @@
     display: block;
 }
 
+.sciezka-do-strony{
+    color: var(--text-on-dark);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
 @media (max-width: 600px) {
     .ogolny-separator {
         width: 100%;

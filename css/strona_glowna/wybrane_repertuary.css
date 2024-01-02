@@ -15,7 +15,7 @@
 .wybrane-repertuary-pionowa-linia {
     display: inline-block;
     margin: 0 16px;
-    background-color: black;
+    background-color: var(--black);
     height: 20px;
     width: 2px;
 }

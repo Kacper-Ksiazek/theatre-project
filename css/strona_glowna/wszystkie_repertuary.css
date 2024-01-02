@@ -1,55 +1,52 @@
-#wszystkie-repertuary-opis{
-  text-align: justify;
-  color: var(--text-on-dark);
+#wszystkie-repertuary {
+    --gap: 8px;
 }
-#wszystkie-repertuary-naglowek{
-  text-align: center;
-  font-size: 60px;
+
+#wszystkie-repertuary-poboczne-zdjecia,
+#wszystkie-repertuary-glowne-zdjecia {
+    display: grid;
+    gap: var(--gap);
+    width: 100%;
 }
-#wszystkie-repertuary-kontener{
-  padding: 40px 0 30px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+#wszystkie-repertuary-glowne-zdjecia {
+    grid-template-columns: repeat(4, 1fr);
 }
-#wszystkie-repertuary-glowne-zdjecia{
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
+#wszystkie-repertuary-glowne-zdjecia > * {
+    width: 100%;
+    aspect-ratio: 0.9;
 }
-#wszystkie-repertuary-glowne-zdjecia img{
-  width: 24.5%;
+#wszystkie-repertuary-poboczne-zdjecia {
+    margin-top: var(--gap);
+    grid-template-columns: repeat(8, 1fr);
 }
-#wszystkie-repertuary-poboczne-zdjecia{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+
+#wszystkie-repertuary-poboczne-zdjecia > * {
+    width: 100%;
+    aspect-ratio: 1;
 }
-#wszystkie-repertuary-poboczne-zdjecia img{
-  width: 140px;
+#wszystkie-repertuary-zdjecia-wiecej {
+    display: block;
+    background-color: var(--separator-on-dark);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
-#wszystkie-repertuary-zdjecia-wiecej{
-  display: block;
-  width: 140px;
-  height: 140px;
-  background-color: var(--separator-on-dark);
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
+#wszystkie-repertuary-poboczne-zdjecia img,
+#wszystkie-repertuary-zdjecia-wiecej,
+#wszystkie-repertuary-glowne-zdjecia img {
+    border-radius: 4px;
+    cursor: pointer;
 }
-#wszystkie-repertuary-poboczne-zdjecia img, #wszystkie-repertuary-zdjecia-wiecej, #wszystkie-repertuary-glowne-zdjecia img{
-  border-radius: 4px;
-  cursor: pointer;
+#wszystkie-repertuary-obrazek-wiecej-zdjec-naglowek {
+    font-size: 42px;
 }
-#wszystkie-repertuary-obrazek-wiecej-zdjec-naglowek{
-  font-size: 42px;
+#wszystkie-repertuary-obrazek-wiecej-zdjec-podpis {
+    font-size: 24px;
+    color: var(--text-on-dark);
 }
-#wszystkie-repertuary-obrazek-wiecej-zdjec-podpis{
-  font-size: 24px;
-  color: var(--text-on-dark);
-}
-#wszystkie-repertuary-zobacz-pelen-repertuar{
+#wszystkie-repertuary-zobacz-pelen-repertuar {
     font-size: 16px;
     height: 50px;
     border-radius: 6px;
@@ -64,6 +61,28 @@
     border: none;
     margin-top: 40px;
 }
-#wszystkie-repertuary-zobacz-pelen-repertuar:hover{
-  opacity: 0.7;
+#wszystkie-repertuary-zobacz-pelen-repertuar:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+    #wszystkie-repertuary-glowne-zdjecia {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #wszystkie-repertuary-poboczne-zdjecia {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    #wszystkie-repertuary-poboczne-zdjecia {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #wszystkie-repertuary-poboczne-zdjecia > img:nth-of-type(6),
+    #wszystkie-repertuary-poboczne-zdjecia > img:nth-of-type(7) {
+        display: none;
+    }
 }

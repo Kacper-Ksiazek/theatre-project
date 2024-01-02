@@ -140,3 +140,9 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 370px) {
+    #rekomendacje .sekcja-czarny-przerywnik-naglowek {
+        font-size: 36px;
+    }
+}

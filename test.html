@@ -1,19 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
     <head>
+        <!--  -->
+        <!-- Metatagi -->
+        <!--  -->
+        <title>Ethereal</title>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Test</title>
+        <!--  -->
+        <!-- Style globalne -->
+        <!--  -->
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/variables.css" />
+        <link rel="stylesheet" href="css/_atoms/index.css" />
+        <!--  -->
+        <!-- Potrzebne na te strone arkusze stylow -->
+        <!--  -->
+        <link rel="stylesheet" href="css/layout/index.css" />
+        <link rel="stylesheet" href="css/strona_glowna/index.css" />
         <!--  -->
         <!-- Font awesome icons -->
         <!--  -->
         <link rel="stylesheet" href="./assets/fontawasome/css/all.css" />
     </head>
     <body>
-        <section id="recenzje">
-            <!-- Treść generowana przez javascript -->
-        </section>
+        <!--  -->
+        <!-- layout/nawigacja -->
+        <!--  -->
+        <section id="rekomendacje" class="sekcja-czarny-przerywnik-wrapper">
+            <div class="sekcja-czarny-przerywnik-tresc">
+                <h1 class="sekcja-czarny-przerywnik-naglowek">REKOMENDACJE GOŚCI</h1>
+                <p class="ogolny-opis-sekcji">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nostrum cumque ducimus consectetur repellendus itaque illum molestiae facere atque consequatur.
+                </p>
 
-        <script src="/javascript/strona_glowna/skrypt_wypisujacy_recenzje.js" />
+                <div class="rekomendacje-wrapper">
+                    <div class="rekomendacja">
+                        <div class="img-wrapper">
+                            <img src="/images/strona_glowna/rekomendacje/1.jpg" alt="rekomendacja_avatar_1" />
+                        </div>
+                        <h3 class="tytul">Elon Musk</h3>
+                        <h6 class="label">CEO SpaceX, CEO Tesla</h6>
+                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
+
+                        <span class="data">Listopad 2022</span>
+                    </div>
+
+                    <span class="separator-pomiedzy-rekomendacjami"></span>
+
+                    <div class="rekomendacja">
+                        <div class="img-wrapper">
+                            <img src="/images/strona_glowna/rekomendacje/2.jpg" alt="rekomendacja_avatar_2" />
+                        </div>
+                        <h3 class="tytul">Conor McGregor</h3>
+                        <h6 class="label">Laureat Nagrody Nobla z Fizyki</h6>
+                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
+
+                        <span class="data">Sierpień 2022</span>
+                    </div>
+
+                    <span class="separator-pomiedzy-rekomendacjami"></span>
+
+                    <div class="rekomendacja">
+                        <div class="img-wrapper">
+                            <img src="/images/strona_glowna/rekomendacje/3.jpg" alt="rekomendacja_avatar_3" />
+                        </div>
+                        <h3 class="tytul">Bill Gates</h3>
+                        <h6 class="label">Co-founder Microsoft</h6>
+                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
+
+                        <span class="data">Listopad 2022</span>
+                    </div>
+
+                    <span class="separator-pomiedzy-rekomendacjami"></span>
+
+                    <div class="rekomendacja">
+                        <div class="img-wrapper">
+                            <img src="/images/strona_glowna/rekomendacje/4.jpg" alt="rekomendacja_avatar_4" />
+                        </div>
+                        <h3 class="tytul">David Beckham</h3>
+                        <h6 class="label">Były piłkarz</h6>
+                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
+
+                        <span class="data">Listopad 2022</span>
+                    </div>
+                    <!--  -->
+                </div>
+
+                <div class="paginacja">
+                    <span class="strona"></span>
+                    <span class="strona"></span>
+                    <span class="strona"></span>
+                    <span class="strona obecna"></span>
+                    <span class="strona"></span>
+                    <span class="strona"></span>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <!-- JS / Layout-->
+        <!--  -->
+        <script src="javascript/layout/newsletter.js"></script>
+        <script src="javascript/layout/przewijanie_do_gory.js"></script>
+        <script src="javascript/layout/nawigacja/obsluga_scrolla.js"></script>
+        <script src="javascript/layout/nawigacja/wersja_mobilna.js"></script>
+        <!--  -->
+        <!-- JS / Strona główna-->
+        <!--  -->
+        <script src="javascript/strona_glowna/skrypt_wypisujacy_recenzje.js"></script>
     </body>
 </html>

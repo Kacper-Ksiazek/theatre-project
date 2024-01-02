@@ -1,0 +1,40 @@
+#bohaterowie-konkretna-rola-kontener{
+  display: flex;
+  gap: 40px;
+}
+#bohaterowie-naglowek-wystepuja{
+  font-size: 48px;
+  margin: 20px 0 50px 0;
+}
+.bohaterowie-konkretna-rola-zdjecie{
+  position: relative;
+}
+.bohaterowie-konkretna-rola-zdjecie img{
+  width: 300px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.bohaterowie-konkretna-rola-prostokat{
+  display: block;
+  height: 380px;
+  width: 300px;
+  border-radius: 4px;
+  background-color: var(--separator-on-light);
+  z-index: -1;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+.bohaterowie-konkretna-rola-rola{
+  font-size: 26px;
+}
+.bohaterowie-konkretna-rola-aktor{
+  font-size: 24px;
+}
+.bohaterowie-konkretna-rola-podpis{
+  margin: 2px 0;
+}
+.bohaterowie-konkretna-rola-opis{
+  text-align: justify;
+  margin-top: 14px;
+}

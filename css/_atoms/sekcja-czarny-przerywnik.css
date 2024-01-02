@@ -31,6 +31,10 @@
     align-items: center;
 }
 
+.sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc.rzad {
+    flex-direction: row;
+}
+
 .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .ogolny-opis-sekcji {
     text-align: center;
 }

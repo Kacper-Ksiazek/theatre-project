@@ -91,3 +91,45 @@
 .lista-repertuarow-konkretny-spektakl-data-miejsce div:nth-child(3){
   margin-top: 60px
 }
+.lista-repertuarow-nawigacja-strony, .lista-repertuarow-nawigacja-miesiace{
+  display: flex;
+  justify-content: center;
+}
+.lista-repertuarow-nawigacja-strony{
+  margin-top: 150px;
+  gap: 10px;
+}
+.lista-repertuarow-nawigacja-miesiace{
+  margin-top: 40px;
+  gap: 20px;
+}
+.lista-repertuarow-nawigacja-strony button, .lista-repertuarow-nawigacja-miesiace button{
+  background-color: var(--light-background);
+  border: 1px solid var(--sub-text-on-light);
+  font-size: 18px;
+  height: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+.lista-repertuarow-nawigacja-strony button:nth-of-type(1){
+  margin-right: 40px;
+}
+.lista-repertuarow-nawigacja-strony button:nth-of-type(8){
+  margin-left: 40px;
+}
+.lista-repertuarow-nawigacja-strony button:hover, .lista-repertuarow-nawigacja-miesiace button:hover{
+  background-color: var(--sub-text-on-light);
+}
+.lista-repertuarow-nawigacja-strony button:focus, .lista-repertuarow-nawigacja-miesiace button:focus{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.lista-repertuarow-nawigacja-strony button{
+  width: 50px;
+}
+.lista-repertuarow-nawigacja-miesiace button{
+  width: 260px;
+}

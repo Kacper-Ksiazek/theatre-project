@@ -33,8 +33,10 @@
 }
 .bohaterowie-konkretna-rola-podpis{
   margin: 2px 0;
+  color: var(--text-on-light);
 }
 .bohaterowie-konkretna-rola-opis{
   text-align: justify;
   margin-top: 14px;
+  color: var(--text-on-light);
 }

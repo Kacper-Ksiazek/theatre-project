@@ -1,4 +1,5 @@
 .sekcja-czarny-przerywnik-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +7,10 @@
     background-color: var(--black);
     color: var(--white);
     padding: 64px 0 48px 0;
+}
+.sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc {
+    position: relative;
+    z-index: 1;
 }
 
 .sekcja-czarny-przerywnik-wrapper .sekcja-czarny-przerywnik-tresc .sekcja-czarny-przerywnik-naglowek {

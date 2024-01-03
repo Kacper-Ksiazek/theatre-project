@@ -7,6 +7,13 @@
     align-items: center;
     gap: 50px;
 }
+
+.lista-repertuarow-konkretny-spektakl-wrapper-przyciskow {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
 .lista-repertuarow-konkretny-spektakl-przycisk {
     background-color: var(--primary);
     padding: 12px 0;
@@ -25,6 +32,7 @@
     display: flex;
     align-items: center;
     color: var(--text-on-light);
+    gap: 16px;
 }
 .lista-repertuarow-konkretny-spektakl-szczegoly-bold {
     font-weight: bold;
@@ -32,7 +40,6 @@
 }
 .lista-repertuarow-pionowa-linia {
     display: inline-block;
-    margin: 0 16px;
     background-color: var(--black);
     height: 20px;
     width: 2px;
@@ -46,9 +53,6 @@
     font-size: 60px;
     margin: 24px 0;
     line-height: 56px;
-}
-.lista-repertuarow-konkretny-spektakl-przycisk:nth-of-type(1) {
-    margin-right: 8px;
 }
 .lista-repertuarow-konkretny-spektakl-zdjecie {
     position: relative;
@@ -96,14 +100,17 @@
 .lista-repertuarow-nawigacja-strony,
 .lista-repertuarow-nawigacja-miesiace {
     display: flex;
-    justify-content: center;
 }
 .lista-repertuarow-nawigacja-strony {
-    margin-top: 150px;
     gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 150px auto 0 auto;
 }
 .lista-repertuarow-nawigacja-miesiace {
     margin-top: 40px;
+    justify-content: center;
     gap: 20px;
 }
 .lista-repertuarow-nawigacja-strony button,
@@ -117,12 +124,6 @@
     transition: background-color 0.2s, color 0.2s;
 }
 
-.lista-repertuarow-nawigacja-strony button:nth-of-type(1) {
-    margin-right: 40px;
-}
-.lista-repertuarow-nawigacja-strony button:nth-of-type(8) {
-    margin-left: 40px;
-}
 .lista-repertuarow-nawigacja-strony button:hover,
 .lista-repertuarow-nawigacja-miesiace button:hover {
     background-color: var(--sub-text-on-light);
@@ -140,4 +141,110 @@
 }
 .lista-repertuarow-nawigacja-miesiace button {
     width: 260px;
+}
+
+@media (max-width: 1000px) {
+    .lista-repertuarow-konkretny-spektakl-wrapper-przyciskow > * {
+        width: 100%;
+    }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+    .lista-repertuarow-konkretny-spektakl-wrapper-przyciskow {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .lista-repertuarow-konkretny-spektakl {
+        flex-wrap: wrap;
+    }
+    .lista-repertuarow-konkretny-spektakl-zdjecie {
+        width: calc(100% - 240px);
+    }
+    .lista-repertuarow-konkretny-spektakl-prostokat {
+        width: 100%;
+        max-width: 460px;
+    }
+
+    .lista-repertuarow-konkretny-spektakl-zdjecie img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lista-repertuarow-konkretny-spektakl-wrapper-przyciskow {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .lista-repertuarow-konkretny-spektakl {
+        flex-direction: column;
+    }
+    .lista-repertuarow-konkretny-spektakl-zdjecie {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .lista-repertuarow-konkretny-spektakl-data-miejsce {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .lista-repertuarow-konkretny-spektakl-data-miejsce > * {
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lista-repertuarow-konkretny-spektakl-szczegoly {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .lista-repertuarow-konkretny-spektakl-prostokat,
+    .lista-repertuarow-nawigacja-strony .paginacja-strona:nth-of-type(6),
+    .lista-repertuarow-konkretny-spektakl-szczegoly > .lista-repertuarow-pionowa-linia {
+        display: none;
+    }
+
+    .lista-repertuarow-konkretny-spektakl-zdjecie img {
+        width: 100%;
+    }
+
+    .lista-repertuarow-nawigacja-strony {
+        gap: 6px;
+    }
+
+    .lista-repertuarow-nawigacja-miesiace {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lista-repertuarow-nawigacja-miesiace > * {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .lista-repertuarow-konkretny-spektakl-tytul {
+        font-size: 48px;
+    }
+
+    .lista-repertuarow-nawigacja-strony .paginacja-strona:nth-of-type(5) {
+        display: none;
+    }
+
+    .lista-repertuarow-konkretny-spektakl-data-miejsce {
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }

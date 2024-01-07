@@ -1,54 +1,142 @@
-#wybor-miesiaca-naglowek{
-  font-size: 60px;
+#wybor-miesiaca {
+    padding: 24px 0 96px 0;
 }
-#wybor-miesiaca-kontener{
-  flex-direction: row;
-  position: relative;
+
+#wybor-miesiaca-naglowek {
+    font-size: 60px;
 }
-#wybor-miesiaca-kafelki-kontener{
-  display: flex;
-  gap: 20px;
-  text-align: center;
+#wybor-miesiaca-kontener {
+    flex-direction: row;
+    position: relative;
 }
-.wybor-miesiaca-kafelek{
-  background-color: rgb(37, 36, 36);
-  padding: 20px 50px;
-  border-radius: 8px;
+#wybor-miesiaca-kafelki-kontener {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 600px;
 }
-.wybor-miesiaca-kafelek-naglowek{
-  font-size: 48px;
+
+.wybor-miesiaca-kafelek {
+    background-color: rgb(37, 36, 36);
+    padding: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.wybor-miesiaca-kafelek-podpis{
-  color: var(--text-on-dark);
+.wybor-miesiaca-kafelek-naglowek {
+    font-size: 48px;
 }
-#wybor-miesiaca-opis{
-  color: var(--text-on-dark);
-  text-align: justify;
-  margin-bottom: 40px;
-  width: 700px;
+.wybor-miesiaca-kafelek-podpis {
+    color: var(--text-on-dark);
 }
-#wybor-miesiaca-select{
-  background-color: var(--black);
-  color: var(--white);
-  font-size: 18px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid var(--text-on-dark);
-  padding: 10px 30px;
-  cursor: pointer;
-  text-align: center;
+#wybor-miesiaca-opis {
+    color: var(--text-on-dark);
+    text-align: justify;
+    margin-bottom: 40px;
+    max-width: 700px;
+    width: 100%;
 }
-#wybor-miesiaca-aktualny-repertuar{
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  margin-bottom: 40px;
-  align-self: baseline;
+
+#wybor-miesiaca-select {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 18px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid var(--text-on-dark);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 8px;
 }
-#wybor-miesiaca-zdjecie{
-  width: 600px;
-  filter: grayscale(1);
-  position: absolute;
-  right: -130px;
-  bottom: -48px;
+#wybor-miesiaca-aktualny-repertuar {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+    align-self: baseline;
+}
+#wybor-miesiaca-zdjecie {
+    width: 40vw;
+    filter: grayscale(1);
+    position: absolute;
+    inset: auto 0 0 auto;
+}
+
+@media (max-width: 1000px) {
+    #wybor-miesiaca {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #wybor-miesiaca-kontener {
+        flex-direction: column;
+    }
+
+    #wybor-miesiaca-zdjecie {
+        position: static;
+    }
+
+    #wybor-miesiaca-kafelki-kontener {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    #wybor-miesiaca-aktualny-repertuar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    #wybor-miesiaca-kafelki-kontener > * {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #wybor-miesiaca-zdjecie {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #wybor-miesiaca-naglowek {
+        text-align: center;
+    }
+
+    #wybor-miesiaca-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #wybor-miesiaca-kafelki-kontener {
+        gap: 8px;
+    }
+
+    #wybor-miesiaca-kafelki-kontener > * {
+        padding: 18px 0;
+    }
+
+    #wybor-miesiaca-kafelki-kontener .wybor-miesiaca-kafelek-naglowek {
+        font-size: 36px;
+    }
+
+    #wybor-miesiaca-kafelki-kontener .wybor-miesiaca-kafelek-podpis {
+        font-size: 16px;
+    }
+
+    #wybor-miesiaca-kafelki-kontener > * {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #wybor-miesiaca-zdjecie {
+        width: 100%;
+    }
 }

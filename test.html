@@ -18,7 +18,7 @@
         <!-- Potrzebne na te strone arkusze stylow -->
         <!--  -->
         <link rel="stylesheet" href="css/layout/index.css" />
-        <link rel="stylesheet" href="css/strona_glowna/index.css" />
+        <link rel="stylesheet" href="css/repertuar/konkretny_repertuar/index.css" />
         <!--  -->
         <!-- Font awesome icons -->
         <!--  -->
@@ -28,76 +28,209 @@
         <!--  -->
         <!-- layout/nawigacja -->
         <!--  -->
-        <section id="rekomendacje" class="sekcja-czarny-przerywnik-wrapper">
+
+        <section id="terminy" class="sekcja-czarny-przerywnik-wrapper">
             <div class="sekcja-czarny-przerywnik-tresc">
-                <h1 class="sekcja-czarny-przerywnik-naglowek">REKOMENDACJE GOŚCI</h1>
-                <p class="ogolny-opis-sekcji">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nostrum cumque ducimus consectetur repellendus itaque illum molestiae facere atque consequatur.
-                </p>
+                <header>
+                    <h1>Następne terminy</h1>
+                    <select id="terminy-miesiac">
+                        <option value="styczen">Styczeń 2024</option>
+                        <option value="luty">Luty 2024</option>
+                        <option value="marzec">Marzec 2024</option>
+                    </select>
+                </header>
 
-                <div class="rekomendacje-wrapper">
-                    <div class="rekomendacja">
-                        <div class="img-wrapper">
-                            <img src="/images/strona_glowna/rekomendacje/1.jpg" alt="rekomendacja_avatar_1" />
-                        </div>
-                        <h3 class="tytul">Elon Musk</h3>
-                        <h6 class="label">CEO SpaceX, CEO Tesla</h6>
-                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
-
-                        <span class="data">Listopad 2022</span>
+                <div id="terminy-lista-terminow-wrapper" class="terminy-sekcja">
+                    <div class="selects-wrapper">
+                        <select id="terminy-miesiac">
+                            <option value="styczen">Styczeń 2024</option>
+                            <option value="luty">Luty 2024</option>
+                            <option value="marzec">Marzec 2024</option>
+                        </select>
+                        <select id="terminy-miesiac">
+                            <option value="styczen">Styczeń 2024</option>
+                            <option value="luty">Luty 2024</option>
+                            <option value="marzec">Marzec 2024</option>
+                        </select>
                     </div>
+                    <p>Znaleziono <strong>8</strong> dostępnych terminów</p>
 
-                    <span class="separator-pomiedzy-rekomendacjami"></span>
-
-                    <div class="rekomendacja">
-                        <div class="img-wrapper">
-                            <img src="/images/strona_glowna/rekomendacje/2.jpg" alt="rekomendacja_avatar_2" />
+                    <div id="terminy-lista-terminow">
+                        <div class="termin">
+                            <span class="dzien">4</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
                         </div>
-                        <h3 class="tytul">Conor McGregor</h3>
-                        <h6 class="label">Laureat Nagrody Nobla z Fizyki</h6>
-                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
-
-                        <span class="data">Sierpień 2022</span>
-                    </div>
-
-                    <span class="separator-pomiedzy-rekomendacjami"></span>
-
-                    <div class="rekomendacja">
-                        <div class="img-wrapper">
-                            <img src="/images/strona_glowna/rekomendacje/3.jpg" alt="rekomendacja_avatar_3" />
+                        <div class="termin">
+                            <span class="dzien">6</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
                         </div>
-                        <h3 class="tytul">Bill Gates</h3>
-                        <h6 class="label">Co-founder Microsoft</h6>
-                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
-
-                        <span class="data">Listopad 2022</span>
-                    </div>
-
-                    <span class="separator-pomiedzy-rekomendacjami"></span>
-
-                    <div class="rekomendacja">
-                        <div class="img-wrapper">
-                            <img src="/images/strona_glowna/rekomendacje/4.jpg" alt="rekomendacja_avatar_4" />
+                        <div class="termin">
+                            <span class="dzien">9</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
                         </div>
-                        <h3 class="tytul">David Beckham</h3>
-                        <h6 class="label">Były piłkarz</h6>
-                        <p class="rekomendacja-opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea quam incidunt, nostrum ut omnis tempora odit maxime .</p>
-
-                        <span class="data">Listopad 2022</span>
+                        <div class="termin">
+                            <span class="dzien">12</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
+                        </div>
+                        <div class="termin">
+                            <span class="dzien">19</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
+                        </div>
+                        <div class="termin">
+                            <span class="dzien">21</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
+                        </div>
+                        <div class="termin">
+                            <span class="dzien">24</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
+                        </div>
+                        <div class="termin">
+                            <span class="dzien">26</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
+                        </div>
+                        <div class="termin">
+                            <span class="dzien">29</span>
+                            <p>19:30, piątek</p>
+                            <span class="separator"></span>
+                            <p>Sala A</p>
+                            <div class="button-wrapper">
+                                <button>Kup bilet</button>
+                                <span class="ilosc-miejsc">10 dostępnych miejsc</span>
+                            </div>
+                        </div>
                     </div>
-                    <!--  -->
                 </div>
 
-                <div class="paginacja">
-                    <span class="strona"></span>
-                    <span class="strona"></span>
-                    <span class="strona"></span>
-                    <span class="strona obecna"></span>
-                    <span class="strona"></span>
-                    <span class="strona"></span>
+                <div id="terminy-kalendarz-wrapper" class="terminy-sekcja">
+                    <h2>Styczeń 2024</h2>
+                    <table id="terminy-kalendarz">
+                        <thead>
+                            <th>pon</th>
+                            <th>wto</th>
+                            <th>śro</th>
+                            <th>czw</th>
+                            <th>pią</th>
+                            <th>sob</th>
+                            <th>nie</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="spektakl">4</td>
+                                <td>5</td>
+                                <td class="swieto">6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="spektakl">9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td class="spektakl">12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td class="spektakl">19</td>
+                                <td>20</td>
+                                <td class="spektakl">21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td class="spektakl">24</td>
+                                <td>25</td>
+                                <td class="spektakl">26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td class="spektakl">29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="nastepny-miesiac">1</td>
+                                <td class="nastepny-miesiac">2</td>
+                                <td class="nastepny-miesiac">3</td>
+                                <td class="nastepny-miesiac">4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Legenda</h3>
+                    <div class="legenda">
+                        <div class="element-legendy">
+                            <div class="kolor bialy"></div>
+                            <p>W tym dniu jest spektakl</p>
+                        </div>
+
+                        <div class="element-legendy">
+                            <div class="kolor niedziela"></div>
+                            <p>Niedziela</p>
+                        </div>
+
+                        <div class="element-legendy">
+                            <div class="kolor swieto"></div>
+                            <p>Święto</p>
+                        </div>
+                    </div>
                 </div>
+                <!--  -->
             </div>
         </section>
+
         <!--  -->
         <!-- JS / Layout-->
         <!--  -->

@@ -1,0 +1,56 @@
+#terminy .sekcja-czarny-przerywnik-tresc {
+    --row-gap: 24px;
+    --half-of-column-gap: 24px;
+
+    display: grid;
+    grid-template-columns: calc(45% - var(--half-of-column-gap)) calc(55% - var(--half-of-column-gap));
+    gap: var(--row-gap);
+    column-gap: calc(2 * var(--half-of-column-gap));
+}
+
+#terminy .sekcja-czarny-przerywnik-tresc header {
+    grid-area: 1/1/2/3;
+    background-color: orange;
+}
+
+#terminy .sekcja-czarny-przerywnik-tresc > div {
+    background-color: red;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#terminy-lista-terminow {
+    height: 100%;
+    overflow-y: scroll;
+    margin-bottom: 12px;
+}
+
+#terminy-lista-terminow::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 3px;
+    background-color: #000;
+}
+#terminy-lista-terminow::-webkit-scrollbar-track {
+    border-left: 2px solid rgba(0, 0, 0, 0.05);
+}
+#terminy-lista-terminow::-webkit-scrollbar-thumb {
+    background: var(--light-background);
+    border-radius: 3px;
+}
+
+@media (max-width: 1000px) {
+    #terminy .sekcja-czarny-przerywnik-tresc {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #terminy .sekcja-czarny-przerywnik-tresc header {
+        order: -2;
+    }
+
+    #terminy .sekcja-czarny-przerywnik-tresc #terminy-kalendarz-wrapper {
+        order: -1;
+    }
+}

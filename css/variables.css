@@ -8,9 +8,9 @@
 
     /* KOLORY TEKSTU NA CIEMNYM TLE */
     --header-on-dark: #fff;
-    --text-on-dark: #b2b2b2;
-    --sub-text-on-dark: #7f7f7f;
-    --separator-on-dark: #171717;
+    --text-on-dark: rgba(255, 255, 255, 0.7);
+    --sub-text-on-dark: rgba(255, 255, 255, 0.4);
+    --separator-on-dark: rgba(255, 255, 255, 0.1);
 
     /* KOLORY TEKSTU NA JASNYM TLE */
     --header-on-light: #000;

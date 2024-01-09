@@ -1,6 +1,11 @@
 #terminy .sekcja-czarny-przerywnik-tresc {
-    --row-gap: 24px;
-    --half-of-column-gap: 24px;
+    --field-bgc: var(--separator-on-dark);
+    --niedziela-bgc: rgba(255, 0, 0, 0.4);
+}
+
+#terminy .sekcja-czarny-przerywnik-tresc {
+    --row-gap: 32px;
+    --half-of-column-gap: 32px;
 
     display: grid;
     grid-template-columns: calc(45% - var(--half-of-column-gap)) calc(55% - var(--half-of-column-gap));
@@ -8,22 +13,74 @@
     column-gap: calc(2 * var(--half-of-column-gap));
 }
 
+#terminy p {
+    color: var(--text-on-dark);
+}
+#terminy p strong {
+    color: var(--white);
+}
+
+#terminy .sekcja-czarny-przerywnik-tresc select {
+    background-color: transparent;
+    border: 1px solid var(--text-on-dark);
+    text-align: center;
+    color: #fff;
+    padding: 10px 32px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
 #terminy .sekcja-czarny-przerywnik-tresc header {
     grid-area: 1/1/2/3;
-    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+#terminy .sekcja-czarny-przerywnik-tresc header h1 {
+    font-size: 42px;
 }
 
 #terminy .sekcja-czarny-przerywnik-tresc > div {
-    background-color: red;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }
 
-#terminy-lista-terminow {
+#terminy #terminy-lista-terminow {
+    margin-top: 24px;
     height: 100%;
     overflow-y: scroll;
     margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding-right: 12px;
+}
+
+@media (min-width: 1001px) {
+    #terminy-lista-terminow-wrapper {
+        position: relative;
+    }
+
+    #terminy-lista-terminow-wrapper::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 80%;
+        right: -36px;
+        background: var(--separator-on-dark);
+        top: 50%;
+        translate: 0 -50%;
+    }
+}
+
+#terminy #terminy-lista-terminow-wrapper .selects-wrapper {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 8px;
 }
 
 #terminy-lista-terminow::-webkit-scrollbar {
@@ -37,6 +94,151 @@
 #terminy-lista-terminow::-webkit-scrollbar-thumb {
     background: var(--light-background);
     border-radius: 3px;
+}
+
+#terminy #terminy-lista-terminow .termin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--field-bgc);
+    padding: 12px 8px;
+    border-radius: 5px;
+}
+
+#terminy #terminy-lista-terminow .termin > .separator {
+    height: calc(100% - 12px);
+    width: 1px;
+    margin: 0 8px;
+    background-color: var(--sub-text-on-dark);
+}
+
+#terminy #terminy-lista-terminow .termin .dzien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #000;
+    width: 56px;
+    aspect-ratio: 1.65;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#terminy #terminy-lista-terminow .termin .brak-miejsc {
+    font-size: 14px;
+    flex-grow: 1;
+    text-align: right;
+    color: var(--sub-text-on-dark);
+}
+
+#terminy #terminy-lista-terminow .termin .button-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#terminy #terminy-lista-terminow .termin .button-wrapper button {
+    width: 144px;
+    height: 32px;
+    border-radius: 3px;
+    font-size: 16px;
+    border: none;
+}
+
+#terminy #terminy-lista-terminow .termin .button-wrapper .ilosc-miejsc {
+    font-size: 14px;
+    color: var(--text-on-dark);
+    margin-top: 2px;
+    padding-right: 8px;
+}
+
+#terminy #terminy-lista-terminow .termin .button-wrapper .ilosc-miejsc strong {
+    color: var(--text-on-dark);
+}
+
+#terminy #terminy-kalendarz {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+#terminy #terminy-kalendarz span.head-element {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 16px;
+    color: var(--sub-text-on-dark);
+    position: relative;
+}
+
+#terminy #terminy-kalendarz span.head-element:not(:nth-of-type(1))::after {
+    background-color: var(--separator-on-dark);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 2px;
+}
+
+#terminy #terminy-kalendarz span.body-element {
+    background: var(--field-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1.55;
+    border-radius: 3px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: default;
+    color: var(--text-on-dark);
+}
+
+#terminy #terminy-kalendarz span.body-element.spektakl {
+    cursor: pointer;
+}
+
+#terminy #terminy-kalendarz span.body-element.nastepny-miesiac {
+    opacity: 0.4;
+}
+
+#terminy #terminy-kalendarz-wrapper div.legenda,
+#terminy #terminy-kalendarz-wrapper div.legenda > div.element-legendy {
+    display: flex;
+    align-items: center;
+}
+
+#terminy #terminy-kalendarz-wrapper div.legenda {
+    margin-top: 12px;
+    font-size: 16px;
+    gap: 32px;
+}
+
+#terminy #terminy-kalendarz-wrapper div.legenda div.kolor {
+    width: 32px;
+    aspect-ratio: 1.5;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+#terminy #terminy-kalendarz span.body-element:nth-of-type(7n),
+#terminy #terminy-kalendarz-wrapper div.legenda div.kolor.niedziela {
+    background-color: var(--niedziela-bgc);
+}
+
+#terminy #terminy-kalendarz span.body-element.spektakl,
+#terminy #terminy-kalendarz-wrapper div.legenda div.kolor.spektakl {
+    background-color: #fff;
+    color: #000;
+}
+
+#terminy #terminy-kalendarz span.body-element.swieto,
+#terminy #terminy-kalendarz-wrapper div.legenda div.kolor.swieto {
+    background-color: var(--red);
 }
 
 @media (max-width: 1000px) {

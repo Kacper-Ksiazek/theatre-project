@@ -42,8 +42,8 @@
     font-size: 42px;
 }
 
-#terminy .sekcja-czarny-przerywnik-tresc > div {
-    height: 500px;
+#terminy .sekcja-czarny-przerywnik-tresc > div.terminy-sekcja {
+    height: 480px;
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +79,7 @@
 
 #terminy #terminy-lista-terminow-wrapper .selects-wrapper {
     display: flex;
-    margin-bottom: 8px;
+    margin: 12px 0 8px 0;
     gap: 8px;
 }
 
@@ -242,6 +242,15 @@
 }
 
 @media (max-width: 1000px) {
+    #terminy .sekcja-czarny-przerywnik-tresc > div.terminy-sekcja {
+        height: auto;
+    }
+
+    #terminy #terminy-lista-terminow {
+        padding-right: 0;
+        overflow-y: visible;
+    }
+
     #terminy .sekcja-czarny-przerywnik-tresc {
         display: flex;
         flex-direction: column;
@@ -254,5 +263,62 @@
 
     #terminy .sekcja-czarny-przerywnik-tresc #terminy-kalendarz-wrapper {
         order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    #terminy .sekcja-czarny-przerywnik-tresc header {
+        grid-area: 1/1/2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    #terminy .sekcja-czarny-przerywnik-tresc header h1 {
+        text-align: center;
+    }
+
+    #terminy select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #terminy #terminy-kalendarz-wrapper div.legenda {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    #terminy #terminy-lista-terminow .termin {
+        flex-wrap: wrap;
+    }
+
+    #terminy #terminy-lista-terminow .termin .brak-miejsc {
+        text-align: center;
+    }
+
+    #terminy #terminy-lista-terminow .termin .brak-miejsc,
+    #terminy #terminy-lista-terminow .termin .button-wrapper {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    #terminy #terminy-lista-terminow .termin .button-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #terminy #terminy-lista-terminow .termin .button-wrapper button {
+        width: 100%;
+    }
+
+    #terminy #terminy-lista-terminow-wrapper .selects-wrapper {
+        display: flex;
+        flex-direction: column;
     }
 }

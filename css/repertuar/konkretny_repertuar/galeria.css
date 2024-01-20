@@ -5,23 +5,6 @@
     display: flex;
 }
 
-#galeria .galeria-fotografia-kontener:nth-of-type(odd) {
-    padding-left: 20px;
-}
-
-#galeria .galeria-fotografia-kontener:nth-of-type(even) {
-    padding-right: 20px;
-    flex-direction: row-reverse;
-}
-
-#galeria .galeria-fotografia-kontener > div.galeria-fotografia-zdjecie {
-    width: var(--image-width);
-}
-
-#galeria .galeria-fotografia-kontener > div.galeria-fotografia-opis {
-    width: calc(100% - var(--image-width));
-}
-
 #galeria-kontener {
     display: flex;
     gap: 20px;
@@ -87,6 +70,16 @@
     left: var(--position);
 }
 
+#galeria .galeria-fotografia-kontener:nth-of-type(odd) .galeria-brazowy-prostokat {
+    left: var(--position);
+    right: auto;
+}
+
+#galeria .galeria-fotografia-kontener:nth-of-type(odd) .galeria-szary-prostokat {
+    left: auto;
+    right: var(--position);
+}
+
 #galeria .galeria-fotografia-kontener:nth-of-type(even) .galeria-brazowy-prostokat {
     left: auto;
     right: var(--position);
@@ -95,4 +88,68 @@
 #galeria .galeria-fotografia-kontener:nth-of-type(even) .galeria-szary-prostokat {
     left: var(--position);
     right: auto;
+}
+
+@media (min-width: 1001px) {
+    #galeria .galeria-fotografia-kontener:nth-of-type(odd) {
+        padding-left: 20px;
+    }
+
+    #galeria .galeria-fotografia-kontener:nth-of-type(even) {
+        padding-right: 20px;
+        flex-direction: row-reverse;
+    }
+
+    #galeria .galeria-fotografia-kontener .fotografia {
+        width: 100%;
+        aspect-ratio: 680 / 380;
+    }
+
+    #galeria .galeria-fotografia-kontener > div.galeria-fotografia-zdjecie {
+        width: var(--image-width);
+    }
+
+    #galeria .galeria-fotografia-kontener > div.galeria-fotografia-opis {
+        width: calc(100% - var(--image-width));
+    }
+}
+
+@media (max-width: 1000px) {
+    #galeria .galeria-fotografia-kontener {
+        flex-direction: column;
+    }
+
+    #galeria .galeria-fotografia-kontener {
+        align-items: stretch;
+        justify-items: stretch;
+    }
+
+    #galeria .galeria-fotografia-kontener .fotografia {
+        height: 450px;
+        background-position: center;
+    }
+
+    #galeria .galeria-fotografia-kontener .galeria-brazowy-prostokat,
+    #galeria .galeria-fotografia-kontener .galeria-szary-prostokat {
+        display: none;
+    }
+
+    #galeria .galeria-fotografia-kontener:nth-of-type(even) .galeria-brazowy-prostokat {
+        left: auto;
+        right: 0;
+    }
+
+    #galeria .galeria-fotografia-kontener:nth-of-type(even) .galeria-szary-prostokat {
+        left: 0;
+        right: auto;
+    }
+    #galeria .galeria-fotografia-tytul {
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #galeria .galeria-fotografia-kontener .fotografia {
+        height: 350px;
+    }
 }

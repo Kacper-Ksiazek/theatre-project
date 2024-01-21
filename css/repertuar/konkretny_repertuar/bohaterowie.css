@@ -1,42 +1,73 @@
-#bohaterowie-konkretna-rola-kontener{
-  display: flex;
-  gap: 40px;
+#bohaterowie-konkretna-rola-kontener {
+    display: flex;
+    gap: 48px;
 }
-#bohaterowie-naglowek-wystepuja{
-  font-size: 48px;
-  margin: 20px 0 50px 0;
+#bohaterowie-naglowek-wystepuja {
+    font-size: 48px;
+    margin: 20px 0 50px 0;
 }
-.bohaterowie-konkretna-rola-zdjecie{
-  position: relative;
+.bohaterowie-konkretna-rola-zdjecie {
+    position: relative;
+    width: 100%;
 }
-.bohaterowie-konkretna-rola-zdjecie img{
-  width: 300px;
-  border-radius: 4px;
-  margin-bottom: 10px;
+.bohaterowie-konkretna-rola-zdjecie img {
+    width: calc(100% - 20px);
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
-.bohaterowie-konkretna-rola-prostokat{
-  display: block;
-  height: 380px;
-  width: 300px;
-  border-radius: 4px;
-  background-color: var(--separator-on-light);
-  z-index: -1;
-  position: absolute;
-  left: 30px;
-  top: 20px;
+.bohaterowie-konkretna-rola-prostokat {
+    display: block;
+    height: 420px;
+    width: calc(100% - 20px);
+    border-radius: 4px;
+    background-color: var(--separator-on-light);
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+    bottom: -64px;
 }
-.bohaterowie-konkretna-rola-rola{
-  font-size: 26px;
+.bohaterowie-konkretna-rola-rola {
+    font-size: 36px;
 }
-.bohaterowie-konkretna-rola-aktor{
-  font-size: 24px;
+.bohaterowie-konkretna-rola-aktor {
+    font-size: 32px;
 }
-.bohaterowie-konkretna-rola-podpis{
-  margin: 2px 0;
-  color: var(--text-on-light);
+.bohaterowie-konkretna-rola-podpis {
+    margin: 2px 0;
+    color: var(--text-on-light);
 }
-.bohaterowie-konkretna-rola-opis{
-  text-align: justify;
-  margin-top: 14px;
-  color: var(--text-on-light);
+
+.bohaterowie-konkretna-rola-podpis:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+.bohaterowie-konkretna-rola-opis {
+    text-align: justify;
+    margin-top: 4px;
+    color: var(--text-on-light);
+}
+
+@media (max-width: 1000px) {
+    #bohaterowie-konkretna-rola-kontener {
+        flex-direction: column;
+        gap: 128px;
+        align-items: center;
+    }
+
+    #bohaterowie-naglowek-wystepuja {
+        text-align: center;
+    }
+
+    .bohaterowie-konkretna-rola {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 400px) {
+    #bohaterowie-naglowek-wystepuja {
+        font-size: 42px;
+    }
+    #bohaterowie-konkretna-rola-kontener {
+        gap: 64px;
+    }
 }

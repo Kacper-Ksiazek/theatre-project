@@ -19,6 +19,7 @@
 #wystapili-role-kontener {
     display: flex;
     align-items: center;
+    margin-bottom: 48px;
 }
 .wystapili-pionowa-linia {
     display: block;

@@ -315,6 +315,8 @@
 
     #terminy #terminy-lista-terminow .termin .button-wrapper button {
         width: 100%;
+        height: 42px;
+        margin-bottom: 4px;
     }
 
     #terminy #terminy-lista-terminow-wrapper .selects-wrapper {

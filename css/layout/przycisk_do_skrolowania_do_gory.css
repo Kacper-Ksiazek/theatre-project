@@ -12,7 +12,7 @@ button#scroll-to-the-top {
     z-index: 100;
     color: var(--header-on-dark);
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 button#scroll-to-the-top > i.fa-arrow-up {
@@ -21,12 +21,12 @@ button#scroll-to-the-top > i.fa-arrow-up {
     translate: -50% -50%;
     font-size: 24px;
     color: inherit;
-    transition: color 0.2s ease-in-out;
 }
 
 button#scroll-to-the-top:hover {
     background: #fff;
     color: var(--header-on-light);
+    border-color: #000;
 }
 
 button#scroll-to-the-top:disabled {

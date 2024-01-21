@@ -26,7 +26,6 @@
 }
 #ekran-startowy-spektakl-opis {
     color: var(--text-on-light);
-    text-align: justify;
     margin-top: 20px;
 }
 #ekran-startowy-spektakl-kafelki-kontener {
@@ -43,6 +42,8 @@
 }
 #ekran-startowy-spektakl-zdjecie {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 #ekran-startowy-spektakl-zdjecie img {
     width: 100%;
@@ -71,12 +72,38 @@
 }
 #ekran-startowy-spektakl-szary-prostokat {
     background-color: var(--separator-on-light);
-    height: 400px;
     width: 400px;
+    max-width: 80vw;
+    aspect-ratio: 1;
     top: -20px;
     left: -80px;
 }
 .ekran-startowy-spektakl-kafelek-naglowek {
     color: var(--black);
     font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    #ekran-startowy-spektakl-kontener {
+        --gap: 64px;
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #ekran-startowy-spektakl-szary-prostokat {
+        left: 0px;
+    }
+    #ekran-startowy-spektakl-brazowy-prostokat {
+        right: 0px;
+    }
+    #ekran-startowy-spektakl-zdjecie img {
+        width: calc(100% - 32px);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px) {
+    #ekran-startowy-spektakl-kafelki-kontener {
+        flex-direction: column;
+    }
 }

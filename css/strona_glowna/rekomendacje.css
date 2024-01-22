@@ -3,10 +3,12 @@
 }
 
 #rekomendacje .rekomendacje-wrapper {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     gap: 32px;
     max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
 }
 #rekomendacje .separator-pomiedzy-rekomendacjami {
     width: 2px;
@@ -137,6 +139,7 @@
 
 @media (max-width: 660px) {
     #rekomendacje .rekomendacje-wrapper {
+        display: flex;
         flex-direction: column;
     }
 }

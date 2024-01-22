@@ -37,9 +37,9 @@
     background-image: url(/images/strona_glowna/ekran_powitalny/1920x1126.png);
     height: 1126px;
     margin-top: 64px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
 }
 
 @media (max-width: 1540px) {

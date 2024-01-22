@@ -67,13 +67,14 @@
 .wybrane-repertuary-spektakl-konkretny-termin {
     display: inline-block;
     background-color: var(--separator-on-light);
-    padding: 6px 12px;
+    padding: 6px 0;
     border-radius: 4px;
     text-align: center;
     margin-right: 4px;
     transition: opacity 0.2s;
     cursor: pointer;
     margin-top: 20px;
+    flex-grow: 1;
 }
 .wybrane-repertuary-spektakl-zdjecie {
     position: relative;

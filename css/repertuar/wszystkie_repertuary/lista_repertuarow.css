@@ -24,6 +24,8 @@
     cursor: pointer;
     transition: opacity 0.2s;
     width: 170px;
+    text-align: center;
+    text-decoration: none;
 }
 .lista-repertuarow-konkretny-spektakl-przycisk:hover {
     opacity: 0.7;

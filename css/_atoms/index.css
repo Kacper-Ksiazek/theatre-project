@@ -14,6 +14,10 @@
     align-self: center;
     margin-top: 10px;
     border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .zobacz-wiecej:hover {
@@ -34,7 +38,7 @@
     display: block;
 }
 
-.sciezka-do-strony{
+.sciezka-do-strony {
     color: var(--text-on-dark);
     font-size: 16px;
     margin-bottom: 40px;

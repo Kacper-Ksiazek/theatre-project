@@ -1,3 +1,7 @@
+#terminy {
+    min-height: 100vh;
+}
+
 #terminy .sekcja-czarny-przerywnik-tresc {
     --field-bgc: var(--separator-on-dark);
     --niedziela-bgc: rgba(255, 0, 0, 0.4);
@@ -21,7 +25,7 @@
 }
 
 #terminy .sekcja-czarny-przerywnik-tresc select {
-    background-color: transparent;
+    background-color: #000;
     border: 1px solid var(--text-on-dark);
     text-align: center;
     color: #fff;

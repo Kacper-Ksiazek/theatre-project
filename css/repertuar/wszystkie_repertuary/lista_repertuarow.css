@@ -22,13 +22,14 @@
     color: var(--white);
     border: none;
     cursor: pointer;
-    transition: opacity 0.2s;
     width: 170px;
     text-align: center;
     text-decoration: none;
+    transition: all 0.2s;
 }
 .lista-repertuarow-konkretny-spektakl-przycisk:hover {
-    opacity: 0.7;
+    background-color: #c9ad91;
+    color: #fefcf8;
 }
 .lista-repertuarow-konkretny-spektakl-szczegoly {
     display: flex;
@@ -130,9 +131,7 @@
 .lista-repertuarow-nawigacja-miesiace button:hover {
     background-color: var(--sub-text-on-light);
 }
-.lista-repertuarow-nawigacja-strony button:focus,
 .lista-repertuarow-nawigacja-strony button.wybrany,
-.lista-repertuarow-nawigacja-miesiace button:focus,
 .lista-repertuarow-nawigacja-miesiace button.wybrany {
     background-color: var(--black);
     color: var(--white);

@@ -61,8 +61,6 @@
             ACTIVE: "wybrany",
         };
 
-        const CSS_TRANSITION_DURATION = 200;
-
         // Dla kazdego elementu o klasie odpowiadajacej kluczowi KEYS.PAGES
         for (const key in KEYS) {
             // Dodajemy event onClick
@@ -72,10 +70,8 @@
                 // Usuwamy klase CSS_CLASSES.ACTIVE ze wszystkich elementow
                 Nodes.removeClassFromEach(key, CSS_CLASSES.ACTIVE);
 
-                setTimeout(() => {
-                    // Dodajemy klase do kliknietego elementu
-                    event.target.classList.add(CSS_CLASSES.ACTIVE);
-                }, CSS_TRANSITION_DURATION);
+                // Dodajemy klase do kliknietego elementu
+                event.target.classList.add(CSS_CLASSES.ACTIVE);
             });
         }
     }

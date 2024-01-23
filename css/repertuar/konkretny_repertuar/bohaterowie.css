@@ -1,5 +1,6 @@
 #bohaterowie-konkretna-rola-kontener {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 48px;
 }
 #bohaterowie-naglowek-wystepuja {
@@ -47,8 +48,16 @@
     color: var(--text-on-light);
 }
 
+@media (min-width: 1001px) {
+    .bohaterowie-konkretna-rola-zdjecie img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
 @media (max-width: 1000px) {
     #bohaterowie-konkretna-rola-kontener {
+        display: flex;
         flex-direction: column;
         gap: 128px;
         align-items: center;
